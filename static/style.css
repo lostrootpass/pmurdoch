@@ -144,6 +144,28 @@ body
 	float: none;
 }
 
+#euler ul
+{
+	list-style-type: none;
+}
+
+.euler_id
+{
+	font-weight: bold;
+	width: 20px;
+}
+
+#euler li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#euler li a:hover
+{
+	text-decoration: underline;
+}
+
 #footer
 {
 	margin-left: auto;

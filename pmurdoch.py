@@ -1,9 +1,11 @@
 import web
+from os import listdir
         
 urls = (
     '/', 'index',
+	'/euler', 'euler',
 	'/([a-zA-Z0-9\-_]+)/?', 'page',
-	'/code/([a-zA-Z0-9\-_]+)/?', 'code' 
+	'/code/([a-zA-Z0-9\.\-\/_]+)/?', 'code'
 )
 app = web.application(urls, globals())
 templates = web.template.render("templates")
@@ -15,6 +17,11 @@ def get_page(name):
 def get_error(code):
 	f = open('error/' + code + '.html')
 	return f.read()
+
+class euler:
+	def GET(self):
+		dir = listdir('C:\Users\Pete\projects\pmurdoch\code\euler')
+		return templates.base(templates, templates.euler(templates, dir))
 
 class code:
 	def GET(self, name):

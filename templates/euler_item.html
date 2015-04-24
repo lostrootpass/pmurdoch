@@ -1,0 +1,12 @@
+$def with(id)
+
+$ ext = ''
+$ pos = id.find('.')
+
+$if pos != -1:
+	$ ext = id[pos:]
+	$ id = id[:pos]
+
+<li>
+	<span class="euler_id">$id</span>: <a href="https://projecteuler.net/problem=$id">Problem</a> | <a href="/code/euler/$id$ext">Solution</a>
+</li>

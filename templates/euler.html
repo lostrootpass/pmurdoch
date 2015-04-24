@@ -1,0 +1,7 @@
+$def with(templates, files)
+<div id="euler">
+	<ul>
+		$for i in files:
+			$:templates.euler_item(i)
+	</ul>
+</div>
