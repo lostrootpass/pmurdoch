@@ -166,6 +166,13 @@ body
 	text-decoration: underline;
 }
 
+#euler_explanation a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
 #footer
 {
 	margin-left: auto;

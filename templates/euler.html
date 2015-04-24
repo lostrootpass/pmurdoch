@@ -1,5 +1,9 @@
 $def with(templates, files)
 <div id="euler">
+<h3>Project Euler</h3>
+<div id="euler_explanation">
+	<p>For an overview of what Project Euler is, see the <a href="http://projecteuler.net">Project Euler website</a>.</p>
+</div>
 	<ul>
 		$for i in files:
 			$:templates.euler_item(i)
