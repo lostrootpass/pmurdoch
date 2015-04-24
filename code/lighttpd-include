@@ -1,0 +1,65 @@
+#!/bin/python
+
+#example usage (lighttpd.conf):
+# $HTTP["host"] =~ "(^|\.)example.com$" {
+# 		include_shell "/bin/lighttpd-include -u alice -d example.com"
+# }
+#
+#and in /home/alice/.lighttpd/example.com.conf:
+#
+# $HTTP["host"] =~ "^(www\.|)example.com$" {}
+# 		server.document-root = "/home/alice/public_html"
+# }
+#
+# The user will need to reload lighttpd for changes to take effect
+# One solution is wrapping the reload command in a script and listing it in sudoers for webusers
+
+import argparse, re
+import pwd, os, subprocess, sys
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-u", "--user")
+parser.add_argument("-d", "--domain")
+args = parser.parse_args()
+
+#config stuff - change this to suit your needs
+usr_path = "/home/{0.user}/"
+default_path = usr_path + "public_html/"
+cfg_path_format = "/home/{0.user}/.lighttpd/{0.domain}.conf"
+max_cfg_size = 100 * 1024 #max size 100KB per domain per user
+path = cfg_path_format.format(args)
+
+#make sure it's not maliciously large
+if not os.path.exists(path) or os.path.getsize(path) > max_cfg_size:
+	sys.exit()
+
+#make sure it's valid lighttpd syntax first
+#done this way to mute lighttpd output and stop it interfering
+if not "Syntax OK" in subprocess.check_output(["lighttpd", "-t", "-f", path]):
+	sys.exit()
+
+def clean_unsafe_commands(text):
+	unsafe_commands = ['include', 'include_shell', 'server.chroot']
+	
+	for cmd in unsafe_commands:
+		if cmd in text:
+			return ""
+	
+	return text
+
+#careful to only clean things that are actually assigned paths not e.g. hosts or fcgi params
+def clean_unsafe_paths(text):
+	cleaned = text
+	for match in re.finditer(' = "(.*)/(.*)"', cleaned):
+		intended_path = cleaned[match.start() + 4 : match.end() -1]
+		if usr_path.format(args) not in intended_path:
+			cleaned = cleaned.replace(intended_path, default_path.format(args))
+
+	return cleaned
+
+cfg = open(path, 'r')
+
+for line in cfg:
+	print clean_unsafe_commands(clean_unsafe_paths(line))
+
+cfg.close()

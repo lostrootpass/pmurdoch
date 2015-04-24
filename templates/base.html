@@ -1,0 +1,35 @@
+$def with(templates, content)
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pete Murdoch</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="site-content">
+			<div id="header">
+				<a href="/"><h1>Pete Murdoch</h1></a>
+			</div>
+			<div id="ontheweb">
+				<ul>
+					$:templates.ontheweb("linkedin", "http://uk.linkedin.com/in/petemurdoch")
+					$:templates.ontheweb("twitter", "http://twitter.com/lostrootpass")
+					$:templates.ontheweb("flickr", "http://flickr.com/lostrootpass")
+					$:templates.ontheweb("github", "http://github.com/lostrootpass")
+					$:templates.ontheweb("steam", "http://steamcommunity.com/id/lostrootpass")
+				</ul>
+			</div>
+			
+			<div id="content">
+				$:content
+			</div>
+		</div>
+		
+		<div id="footer">
+			<p>Email: [first name] [at] [this domain]</p>
+			<p>This site and its owner are fully RFC2324 compliant.</p>
+		</div>
+	</body>
+</html>
