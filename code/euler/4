@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+for( $i = 999; $i >= 100; --$i )
+{
+	for( $j = 999; $j >= 100; --$j )
+	{
+		$num = $i * $j;
+		if( reverse( split( //, $num ) ) == $num && $num > $palindrome )
+		{
+			$palindrome = $num;
+		}
+	}
+}
+
+print "Palindrome is $palindrome\n";

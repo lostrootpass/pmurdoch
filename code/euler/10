@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+$sum = 0;
+$p = 2;
+@numbers = 1..2_000_000;
+
+while( $p <= sqrt($numbers[ -1 ]) )
+{
+	for( $i = 2; $i <= $numbers[-1]; ++$i )
+	{
+		if( $i * $p >= $numbers[-1] ) { last; }
+		$numbers[($i * $p) -1] = 0; 
+	}
+	do { ++$p; } while($numbers[$p -1] == 0);
+}
+
+for(1..$#numbers)
+{
+	$sum += $numbers[$_];
+	#print "$numbers[$_] ";
+}
+$sum -= $numbers[-1];
+print "\nSum of all the primes below two million is $sum\n";

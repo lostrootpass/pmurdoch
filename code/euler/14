@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+$start = 1;
+$record = 0;
+
+while( $start < 1_000_000 )
+{
+	++$start;
+	$current = 0;
+	$p = $start;
+	while( $p != 1 )
+	{
+		++$current;
+		$p = ($p % 2) ? (3 * $p) + 1 : $p / 2;
+	}
+	if( $current > $record ) { $record = $current; $term = $start; }
+}
+
+print "Record is $record for $term\n";

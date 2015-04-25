@@ -18,9 +18,22 @@ def get_error(code):
 	f = open('error/' + code + '.html')
 	return f.read()
 
+def euler_sort(a, b):
+	apos = a.find('.')
+	bpos = b.find('.')
+	av = a
+	if apos != -1:
+		av = a[:apos]
+	bv = b
+	if bpos != -1:
+		bv = b[:bpos]
+
+	return int(av) - int(bv)
+
 class euler:
 	def GET(self):
-		dir = listdir('C:\Users\Pete\projects\pmurdoch\code\euler')
+		dir = listdir('/home/pete/web/code/euler')
+		dir = sorted(dir, euler_sort)
 		return templates.base(templates, templates.euler(templates, dir))
 
 class code:
