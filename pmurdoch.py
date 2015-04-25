@@ -32,7 +32,8 @@ def euler_sort(a, b):
 
 class euler:
 	def GET(self):
-		dir = listdir('/home/pete/web/code/euler')
+		#dir = listdir('/home/pete/web/code/euler')
+		dir = listdir("C:\Users\Pete\projects\pmurdoch\code\euler")
 		dir = sorted(dir, euler_sort)
 		return templates.base(templates, templates.euler(templates, dir))
 
