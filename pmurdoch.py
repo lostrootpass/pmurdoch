@@ -2,9 +2,12 @@
 
 import web
 from os import listdir
-        
+		
+web.config.debug = True
+
 urls = (
-    '/', 'index',
+	'/', 'index',
+	'/about', 'about',
 	'/euler', 'euler',
 	'/([a-zA-Z0-9\-_]+)/?', 'page',
 	'/code/([a-zA-Z0-9\.\-\/_]+)/?', 'code'
@@ -32,6 +35,10 @@ def euler_sort(a, b):
 
 	return int(av) - int(bv)
 
+class about:
+	def GET(self):
+		return templates.base(templates, templates.about(templates))
+
 class euler:
 	def GET(self):
 		dir = listdir('/home/pete/web/code/euler')
@@ -57,8 +64,8 @@ class page:
 			raise web.notfound(templates.base(templates, get_error('404')))
 	
 class index:        
-    def GET(self):
+	def GET(self):
 		return templates.base(templates, templates.index(templates))
 
 if __name__ == "__main__":
-    app.run()
+	app.run()

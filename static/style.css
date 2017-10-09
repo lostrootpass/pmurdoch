@@ -1,6 +1,13 @@
+* 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
 body
 {
 	font-family: 'Oxygen', sans-serif;
+	/*background-color: #26292b;*/
 }
 
 .error a
@@ -19,6 +26,8 @@ body
 {
 	text-decoration: none;
 	color: black;
+	text-align: center;
+	padding: 10px;
 }
 
 #flashplayer
@@ -37,9 +46,56 @@ body
 	margin-right: auto;
 }
 
+#navbar
+{
+	width: 100% fixed;
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+	/*margin-top: -1px;
+	margin-bottom: -1px;*/
+}
+
+#navbar li
+{
+	padding: 2px;
+	margin: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	list-style-type: none;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+.navlink, .navlink:active, .navlink:hover, .navlink:link, .navlink:visited, .navlink:focus
+{
+	text-decoration: none !important;
+	color: pink;
+}
+
+#navbar li a
+{
+	color: black;
+	/*margin-bottom: -2px;*/
+	display: block;
+	text-decoration: none !important;
+	border: none !important;
+}
+
+#navbar li:hover
+{
+	border-bottom-color: black;
+}
+
+#navbar li:active
+{
+	text-decoration: underline;
+}
+
 #ontheweb ul
 {
 	padding-left: 0px;
+	text-align: center;
 }
 
 #ontheweb li
@@ -54,6 +110,12 @@ body
 #ontheweb li:hover
 {
 	opacity: 1.0;
+}
+
+#aboutbody
+{
+	width: 60%;
+	text-align: center;
 }
 
 .item-overview
@@ -180,9 +242,9 @@ body
 {
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10px;
 	text-align: center;
 	width: 50%;
-	
 	color: lightgrey;
 	-webkit-transition: color 1s;
 	transition: color 1s;

@@ -12,16 +12,12 @@ $def with(templates, content)
 			<div id="header">
 				<a href="/"><h1>Pete Murdoch</h1></a>
 			</div>
-			<div id="ontheweb">
+			<div id="navbar">
 				<ul>
-					$:templates.ontheweb("linkedin", "http://uk.linkedin.com/in/petemurdoch")
-					$:templates.ontheweb("twitter", "http://twitter.com/lostrootpass")
-					$:templates.ontheweb("flickr", "http://flickr.com/lostrootpass")
-					$:templates.ontheweb("github", "http://github.com/lostrootpass")
-					$:templates.ontheweb("steam", "http://steamcommunity.com/id/lostrootpass")
+					<li><a href="/" class="navlink">Work</a></li>
+					<li><a href="/about" class="navlink">About/Contact</a></li>
 				</ul>
 			</div>
-			
 			<div id="content">
 				$:content
 			</div>
