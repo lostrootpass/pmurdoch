@@ -1,14 +1,12 @@
-$def with(name, link, description, flex = None, thumbnail = None)
-<!--<div class="mosaic-element" style="flex: $flex;">-->
-<a href="$link">
+$def with(project)
+<a href="$project.link">
 	<div class="item-overview">
 		<div class="item-details">
-			<h4 class="name">$name</h4>
+			<h4 class="name">$project.name</h4>
 		</div>
 		<div class="thumbnail">
-		$if thumbnail:
-			<img src="/static/thumbnails/${thumbnail}" alt="" />
+		$if project.thumbnail:
+			<img src="/static/thumbnails/${project.thumbnail}" alt="" />
 		</div>
 	</div>
 </a>
-<!--</div>-->

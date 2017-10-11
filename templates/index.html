@@ -20,8 +20,7 @@ $code:
 	projects["yodawg"] = Project("This Site", "/", "")
 
 	def getel(mosaicsize, height, name):
-		p = projects[name]
-		return templates.element(mosaicsize, height, templates.item(p.name, p.link, "", "", p.thumbnail))
+		return templates.element(mosaicsize, height, templates.item(projects[name]))
 
 <div id="games" class="vertical-flow">
 	<div class="horizontal-flow mosaic-cluster full-mosaic">
