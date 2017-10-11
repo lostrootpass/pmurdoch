@@ -30,6 +30,11 @@ body
 	padding: 10px;
 }
 
+h1
+{
+	font-size: 3em;
+}
+
 #flashplayer
 {
 	margin-left: auto;
@@ -44,6 +49,19 @@ body
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#games
+{
+	column-count: 3;
+	column-gap: 0;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	flex-wrap: wrap;
+	/*align-items: flex-start;*/
 }
 
 #navbar
@@ -64,13 +82,12 @@ body
 	margin-right: 5px;
 	list-style-type: none;
 	display: inline-block;
-	border-bottom: 2px solid transparent;
+	border-bottom: 3px solid transparent;
 }
 
 .navlink, .navlink:active, .navlink:hover, .navlink:link, .navlink:visited, .navlink:focus
 {
 	text-decoration: none !important;
-	color: pink;
 }
 
 #navbar li a
@@ -118,10 +135,77 @@ body
 	text-align: center;
 }
 
+#content
+{
+	overflow: hidden;
+}
+
+.vertical-flow
+{
+	flex-direction: column;
+}
+
+@media all and (max-width: 900px)
+{
+	.horizontal-flow
+	{
+		flex-direction: column;
+	}
+}
+
+@media all and (min-width: 901px)
+{
+	.horizontal-flow
+	{
+		flex-direction: row;
+	}
+}
+
+.full-mosaic
+{
+	flex-basis: 100%;
+}
+
+.half-mosaic
+{
+	flex-basis: 50%;
+}
+
+.quarter-mosaic
+{
+	flex-basis: 25%;
+}
+
+.mosaic-cluster
+{
+	display: flex;
+	height: 100%;
+}
+
+.mosaic-element
+{
+	display: flex;
+	/*flex: 2 2 auto;*/
+	break-inside: avoid;
+	overflow: hidden;
+	/*flex-shrink: 0 !important;*/
+	/*min-width: 400px;*/
+	height: 100%;
+	/*flex-basis: 400px;*/
+	flex-grow: 0;
+	align-items: flex-start;
+}
+
+.mosaic-element > a
+{
+	width: 100%;
+	height: 100%;
+}
+
 .item-overview
 {
 	width: 100%;
-	height: 100px;
+	height: 100%;
 	border: 1px lightgrey solid;
 	margin-bottom: 5px;
 	text-decoration: none;
@@ -142,24 +226,35 @@ body
 {
 	padding: 10px;
 	float: left;
-	width: 100%;
+	/*width: 100%;*/
+	background: grey;
+	opacity: 0.0;
+	z-index: 1;
+	position: relative;
+}
+
+.item-overview:hover > .item-details
+{
+	opacity: 0.9;
 }
 
 .item-overview .thumbnail 
 {
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	/*top: 0px;
+	right: 0px;*/
+	width: 100%;
+	height: 100%;
 }
 
-.item-overview  img
+.item-overview .thumbnail img
 {
-	max-width: 250px;
-	height: auto;
+	/*max-width: 100%;*/
+	height: 100%;
 	width: 100%;
-	opacity: 0.7;
-	-webkit-transition: max-width 1s, opacity 0.5s;
-	transition: max-width 1s, opacity 0.5s;
+	opacity: 0.8;
+	-webkit-transition: width 1s, height 1s, opacity 0.5s;
+	transition: width 1s, height 1s, opacity 0.5s;
 }
 
 .item-overview:hover
@@ -170,7 +265,8 @@ body
 
 .item-overview:hover img
 {
-	max-width: 300px;
+	width: 110%;
+	height: 110%;
 	opacity: 1.0;
 }
 
