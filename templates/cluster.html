@@ -1,0 +1,8 @@
+$def with(flow, mosaic, elements, flexbasis=None)
+$if flexbasis:
+    <div class="$(flow)-flow $(mosaic)-mosaic mosaic-cluster" style="flex-basis: $flexbasis">
+$else:
+    <div class="$(flow)-flow $(mosaic)-mosaic mosaic-cluster">
+$for e in elements:
+    $:e
+</div>

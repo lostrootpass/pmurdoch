@@ -2,6 +2,7 @@
 
 import web
 from os import listdir
+from collections import namedtuple
 		
 web.config.debug = True
 
@@ -13,7 +14,8 @@ urls = (
 	'/code/([a-zA-Z0-9\.\-\/_]+)/?', 'code'
 )
 app = web.application(urls, globals())
-templates = web.template.render("templates")
+webpyglobals = {'namedtuple': namedtuple}
+templates = web.template.render("templates", globals=webpyglobals)
 
 def get_page(name):
 	f = open('pages/' + name + '.html')
