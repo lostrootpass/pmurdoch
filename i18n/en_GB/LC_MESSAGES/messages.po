@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-12 20:26+0200\n"
-"PO-Revision-Date: 2017-10-12 20:27+0200\n"
+"POT-Creation-Date: 2017-10-12 21:07+0200\n"
+"PO-Revision-Date: 2017-10-12 21:31+0200\n"
 "Last-Translator: Pete Murdoch <web@pmurdoch.com>\n"
 "Language-Team: Pete Murdoch\n"
 "Language: en_GB\n"
@@ -17,25 +17,47 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "Generated-By: pygettext.py 1.5\n"
 
+#: templates/pages\extinction.html:3 templates\index.html:10
+msgid "projname_extinction"
+msgstr "Countdown to Extinction"
+
+#: templates/pages\extinction.html:6
+msgid "audio"
+msgstr "Audio work"
+
+#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
+#: templates/pages\mud.html:6 templates/pages\wetware.html:7
+msgid "programmer"
+msgstr "Programmer"
+
+#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
+#: templates/pages\mud.html:6 templates/pages\wetware.html:7
+msgid "role"
+msgstr "Role"
+
+#: templates/pages\extinction.html:9
+msgid "projectdesc_extinction"
+msgstr ""
+"<p>Countdown to Extinction is a survival game created in 48 hours as part of "
+"Global Game Jam 2011. It was written in ActionScript3 using Flashpunk.</p>\n"
+"<p>The source code is available under a Creative Commons license via <a "
+"href=\"http://archive.globalgamejam.org/2011/countdown-extinction/\">Global "
+"Game Jam</a>.</p>\n"
+"<p>For full credits and more information see the <a "
+"href=\"http://archive.globalgamejam.org/2011/countdown-extinction/\">GGJ "
+"submission page</a>.</p>"
+
 #: templates/pages\flightsimworld.html:3 templates\index.html:8
 msgid "projname_fsw"
 msgstr "Flight Sim World"
 
 #: templates/pages\flightsimworld.html:6
-msgid "devstudio"
-msgstr "Developer"
-
-#: templates/pages\flightsimworld.html:6
 msgid "studioname_dovetailgames"
 msgstr "Dovetail Games"
 
-#: templates/pages\flightsimworld.html:7
-msgid "programmer"
-msgstr "Programmer"
-
-#: templates/pages\flightsimworld.html:7
-msgid "role"
-msgstr "Role"
+#: templates/pages\flightsimworld.html:6 templates/pages\wetware.html:6
+msgid "devstudio"
+msgstr "Developer"
 
 #: templates/pages\flightsimworld.html:10
 msgid "projectdesc_fsw"
@@ -49,6 +71,100 @@ msgstr ""
 "third-party partnerships, and community content via Steam "
 "Workshop.</p><p>Flight Sim World is available on <a href=\"http://store.steam"
 "powered.com/app/389280/Flight_Sim_World/\">Steam</a>.</p>"
+
+#: templates/pages\hats.html:3 templates\index.html:11
+msgid "projname_hats"
+msgstr "Obtain Hats For Glory!"
+
+#: templates/pages\hats.html:6
+msgid "projectdesc_hats"
+msgstr ""
+"<p>Obtain hats, for you have been promised glory if you do.</p>\n"
+"\n"
+"<p>Play on <a href=\"http://tinyurl.com/obtainhats\">Kongregate</a>.</p>"
+
+#: templates/pages\minutegames.html:3 templates\index.html:14
+msgid "projname_minutegames"
+msgstr "Minute Games"
+
+#: templates/pages\minutegames.html:7
+msgid "projectdesc_minutegames"
+msgstr ""
+"<p>Minute Games is a minigame collection that engages players in a variety "
+"of ways including augmented reality and a Rock Band-esque singing "
+"minigame.</p>\n"
+"<p>Due to license expiration, Minute Games is no longer available for "
+"download.</p>"
+
+#: templates/pages\mud.html:3 templates\index.html:9
+msgid "projname_mud"
+msgstr "MUD: Multi-User Deathtrap"
+
+#: templates/pages\mud.html:9
+msgid "projectdesc_mud"
+msgstr ""
+"<p>MUD: Multi-User Deathtrap is a non-euclidian roguelike created in 48 "
+"hours for the Global Game Jam 2012. It was written in Lua using LOVE2D.</p>\n"
+"<p>The source code is available under a Creative Commons license on <a "
+"href=\"http://github.com/lostrootpass/sgj12\">Github</a>.</p>\n"
+"<p>For full credits and more information see the <a "
+"href=\"http://archive.globalgamejam.org/2012/multi-user-deathtrap\">GGJ "
+"submission page</a>.</p>"
+
+#: templates/pages\muffins.html:3 templates\index.html:13
+msgid "projname_muffins"
+msgstr "Stop! Engage Muffin Contraption!"
+
+#: templates/pages\muffins.html:6
+msgid "projectdesc_muffins"
+msgstr ""
+"<p>A puzzle game about baking muffins, but not baking them too much. Much "
+"like real life.</p>\n"
+"</p>Play on <a "
+"href=\"http://tinyurl.com/muffincontraption\">Kongregate</a>.</p>"
+
+#: templates/pages\tachyon.html:3 templates\index.html:15
+msgid "projname_tachyon"
+msgstr "Tachyon"
+
+#: templates/pages\tachyon.html:6
+msgid "projectdesc_tachyon"
+msgstr ""
+"<p>Tachyon was a commercial Twitter client developed for webOS in 2010. "
+"Acting as a trendsetter in many areas that Twitter didn't yet fully or "
+"officially support (longposts, timeline gaps, multiple account support and "
+"more), Tachyon found success amongst an enthusiastic webOS audience who "
+"needed a fast, powerful client with a clean and professional presentation. "
+"The development of Tachyon led to being awarded a grant from the Prince's "
+"Trust.</p>\n"
+"</p>As the webOS marketplace has now been shutdown and no more webOS devices "
+"are scheduled for release, Tachyon has been relicensed under the zlib open "
+"source license and can be found on <a "
+"href=\"http://github.com/lostrootpass/tachyon\">Github</a>.</p>"
+
+#: templates/pages\wetware.html:3 templates\index.html:12
+msgid "projname_wetware"
+msgstr "Wetware"
+
+#: templates/pages\wetware.html:6
+msgid "studioname_realitycouncil"
+msgstr "Reality Council"
+
+#: templates/pages\wetware.html:7
+msgid "designer"
+msgstr "Designer"
+
+#: templates/pages\wetware.html:10
+msgid "projectdesc_wetware"
+msgstr ""
+"<blockquote><p>\"Agreeably devoid of morals\" - PC Gamer</p></blockquote>\n"
+"<p>Wetware is the flagship strategy game of independent studio Reality "
+"Council. Based on in-house technology, this narrative strategy game is "
+"inspired by the likes of Syndicate, X-COM, and Uplink. It features complex "
+"tiered GOAP AI, written using C++ and uses OpenGL as a render backend. It "
+"features a fully-extensible mod system using Lua bindings allowing for all "
+"aspects of the game to be configured and modded by users.</p>\n"
+"<p>Wetware is available for Windows, OS X and Linux.</p>"
 
 #: templates\about.html:12
 msgid "aboutme"
@@ -67,34 +183,6 @@ msgstr "Work"
 #: templates\base.html:18
 msgid "nav_aboutcontact"
 msgstr "About / Contact"
-
-#: templates\index.html:9
-msgid "projname_mud"
-msgstr "MUD: Multi-User Deathtrap"
-
-#: templates\index.html:10
-msgid "projname_extinction"
-msgstr "Countdown to Extinction"
-
-#: templates\index.html:11
-msgid "projname_hats"
-msgstr "Obtain Hats For Glory!"
-
-#: templates\index.html:12
-msgid "projname_wetware"
-msgstr "Wetware"
-
-#: templates\index.html:13
-msgid "projname_muffins"
-msgstr "Stop! Engage Muffin Contraption!"
-
-#: templates\index.html:14
-msgid "projname_minutegames"
-msgstr "Minute Games"
-
-#: templates\index.html:15
-msgid "projname_tachyon"
-msgstr "Tachyon"
 
 #: templates\index.html:16
 msgid "projname_stm"

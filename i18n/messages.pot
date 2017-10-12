@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-10-12 20:31+0200\n"
+"POT-Creation-Date: 2017-10-12 21:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,10 +24,12 @@ msgid "audio"
 msgstr ""
 
 #: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
+#: templates/pages\mud.html:6 templates/pages\wetware.html:7
 msgid "programmer"
 msgstr ""
 
 #: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
+#: templates/pages\mud.html:6 templates/pages\wetware.html:7
 msgid "role"
 msgstr ""
 
@@ -40,15 +42,71 @@ msgid "projname_fsw"
 msgstr ""
 
 #: templates/pages\flightsimworld.html:6
-msgid "devstudio"
+msgid "studioname_dovetailgames"
 msgstr ""
 
-#: templates/pages\flightsimworld.html:6
-msgid "studioname_dovetailgames"
+#: templates/pages\flightsimworld.html:6 templates/pages\wetware.html:6
+msgid "devstudio"
 msgstr ""
 
 #: templates/pages\flightsimworld.html:10
 msgid "projectdesc_fsw"
+msgstr ""
+
+#: templates/pages\hats.html:3 templates\index.html:11
+msgid "projname_hats"
+msgstr ""
+
+#: templates/pages\hats.html:6
+msgid "projectdesc_hats"
+msgstr ""
+
+#: templates/pages\minutegames.html:3 templates\index.html:14
+msgid "projname_minutegames"
+msgstr ""
+
+#: templates/pages\minutegames.html:7
+msgid "projectdesc_minutegames"
+msgstr ""
+
+#: templates/pages\mud.html:3 templates\index.html:9
+msgid "projname_mud"
+msgstr ""
+
+#: templates/pages\mud.html:9
+msgid "projectdesc_mud"
+msgstr ""
+
+#: templates/pages\muffins.html:3 templates\index.html:13
+msgid "projname_muffins"
+msgstr ""
+
+#: templates/pages\muffins.html:6
+msgid "projectdesc_muffins"
+msgstr ""
+
+#: templates/pages\tachyon.html:3 templates\index.html:15
+msgid "projname_tachyon"
+msgstr ""
+
+#: templates/pages\tachyon.html:6
+msgid "projectdesc_tachyon"
+msgstr ""
+
+#: templates/pages\wetware.html:3 templates\index.html:12
+msgid "projname_wetware"
+msgstr ""
+
+#: templates/pages\wetware.html:6
+msgid "studioname_realitycouncil"
+msgstr ""
+
+#: templates/pages\wetware.html:7
+msgid "designer"
+msgstr ""
+
+#: templates/pages\wetware.html:10
+msgid "projectdesc_wetware"
 msgstr ""
 
 #: templates\about.html:12
@@ -65,30 +123,6 @@ msgstr ""
 
 #: templates\base.html:18
 msgid "nav_aboutcontact"
-msgstr ""
-
-#: templates\index.html:9
-msgid "projname_mud"
-msgstr ""
-
-#: templates\index.html:11
-msgid "projname_hats"
-msgstr ""
-
-#: templates\index.html:12
-msgid "projname_wetware"
-msgstr ""
-
-#: templates\index.html:13
-msgid "projname_muffins"
-msgstr ""
-
-#: templates\index.html:14
-msgid "projname_minutegames"
-msgstr ""
-
-#: templates\index.html:15
-msgid "projname_tachyon"
 msgstr ""
 
 #: templates\index.html:16

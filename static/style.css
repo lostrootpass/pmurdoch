@@ -132,6 +132,17 @@ h1
 
 }
 
+blockquote
+{
+	margin-left: 10px;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;	
+	border-left: grey 5px solid;
+	font-style: italic;
+}
+
 #project-body p
 {
 	margin-bottom: 10px;
