@@ -41,6 +41,19 @@ h1
 	margin-left: auto;
 	margin-right: auto;
 	width: 640px;
+	position: absolute;
+}
+
+#flash-underlay
+{
+	width: 640px;
+	height: 480px;
+}
+
+#flash-underlay > img
+{
+	width: 100%;
+	height: 100%;
 }
 
 #site-content
