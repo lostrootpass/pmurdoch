@@ -18,7 +18,7 @@ webpyglobals = {'namedtuple': namedtuple}
 templates = web.template.render("templates", globals=webpyglobals)
 
 def get_page(name):
-	f = open('pages/' + name + '.html')
+	f = open(name + '.html')
 	return f.read()
 	
 def get_error(code):
@@ -61,10 +61,12 @@ class code:
 class page:
 	def GET(self, name):
 		try:
-			return templates.base(templates, get_page(name))
+			# for name, use $_('projectname_'+name) to pull from the l10n file I guess?
+			page = templates.page(templates, name, get_page('pages/headers/'+name), get_page('pages/'+name))
+			return templates.base(templates, page)
 		except:
 			raise web.notfound(templates.base(templates, get_error('404')))
-	
+
 class index:        
 	def GET(self):
 		return templates.base(templates, templates.index(templates))

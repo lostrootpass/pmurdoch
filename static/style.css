@@ -2,6 +2,7 @@
 {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
 body
@@ -49,6 +50,56 @@ h1
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#project-header
+{
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	text-align: center;
+	max-height: 500px;
+	overflow-y: hidden;
+	background-color: grey;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+}
+
+#header-foreground
+{
+	/*width: 600px;
+	height: 400px;
+	background-color: blue;*/
+	z-index: 2;
+	/*position: relative;*/
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
+#project-header > *
+{
+	width: 100vw;
+	max-height: 500px;
+}
+*/
+
+#project-header-img
+{
+	width: 100vw;
+	/*margin-top: -25%;*/
+	float: left;
+	position: absolute;
+	display: inline;
 }
 
 #games
@@ -137,7 +188,7 @@ h1
 
 #content
 {
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .vertical-flow
