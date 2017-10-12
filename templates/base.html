@@ -2,7 +2,7 @@ $def with(templates, content)
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pete Murdoch</title>
+		<title>$_('Pete Murdoch')</title>
 		<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -10,12 +10,12 @@ $def with(templates, content)
 	<body>
 		<div id="site-content">
 			<div id="header">
-				<a href="/"><h1>Pete Murdoch</h1></a>
+				<a href="/"><h1>$_('Pete Murdoch')</h1></a>
 			</div>
 			<div id="navbar">
 				<ul>
-					<li><a href="/" class="navlink">Work</a></li>
-					<li><a href="/about" class="navlink">About/Contact</a></li>
+					<li><a href="/" class="navlink">$_('Work')</a></li>
+					<li><a href="/about" class="navlink">$_('About / Contact')</a></li>
 				</ul>
 			</div>
 			<div id="content">

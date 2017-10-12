@@ -3,6 +3,7 @@
 import web
 from os import listdir
 from collections import namedtuple
+import gettext
 		
 web.config.debug = True
 
@@ -13,17 +14,20 @@ urls = (
 	'/([a-zA-Z0-9\-_]+)/?', 'page',
 	'/code/([a-zA-Z0-9\.\-\/_]+)/?', 'code'
 )
+
+gettext.translation('messages', 'i18n/', languages=['en_GB'], fallback=True).install(True)
+
 app = web.application(urls, globals())
-webpyglobals = {'namedtuple': namedtuple}
+webpyglobals = {'namedtuple': namedtuple, '_': _}
 templates = web.template.render("templates", globals=webpyglobals)
 
 def get_page(name):
-	f = open(name + '.html')
-	return f.read()
+	with open(name + '.html', 'r', encoding='utf-8') as f:
+		return f.read()
 	
 def get_error(code):
-	f = open('error/' + code + '.html')
-	return f.read()
+	with open('error/' + code + '.html', 'r', encoding='utf-8') as f:
+		return f.read()
 
 def euler_sort(a, b):
 	apos = a.find('.')
@@ -39,6 +43,7 @@ def euler_sort(a, b):
 
 class about:
 	def GET(self):
+		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
 		return templates.base(templates, templates.about(templates))
 
 class euler:
@@ -60,8 +65,8 @@ class code:
 
 class page:
 	def GET(self, name):
+		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
 		try:
-			# for name, use $_('projectname_'+name) to pull from the l10n file I guess?
 			page = templates.page(templates, name, get_page('pages/headers/'+name), get_page('pages/'+name))
 			return templates.base(templates, page)
 		except:
@@ -69,6 +74,7 @@ class page:
 
 class index:        
 	def GET(self):
+		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
 		return templates.base(templates, templates.index(templates))
 
 if __name__ == "__main__":
