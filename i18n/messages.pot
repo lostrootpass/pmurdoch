@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-10-12 17:58+0200\n"
+"POT-Creation-Date: 2017-10-12 20:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,56 +15,84 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
+#: templates/pages\extinction.html:3 templates\index.html:10
+msgid "projname_extinction"
+msgstr ""
+
+#: templates/pages\extinction.html:6
+msgid "audio"
+msgstr ""
+
+#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
+msgid "programmer"
+msgstr ""
+
+#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
+msgid "role"
+msgstr ""
+
+#: templates/pages\extinction.html:9
+msgid "projectdesc_extinction"
+msgstr ""
+
+#: templates/pages\flightsimworld.html:3 templates\index.html:8
+msgid "projname_fsw"
+msgstr ""
+
+#: templates/pages\flightsimworld.html:6
+msgid "devstudio"
+msgstr ""
+
+#: templates/pages\flightsimworld.html:6
+msgid "studioname_dovetailgames"
+msgstr ""
+
+#: templates/pages\flightsimworld.html:10
+msgid "projectdesc_fsw"
+msgstr ""
+
 #: templates\about.html:12
-msgid "Find me elsewhere on the Internet at the links above or <a href=\"mailto:web@pmurdoch.com?subject=Hello\">email me</a>"
+msgid "aboutme"
 msgstr ""
 
 #: templates\base.html:5 templates\base.html:13
-msgid "Pete Murdoch"
+msgid "myname"
 msgstr ""
 
 #: templates\base.html:17
-msgid "Work"
+msgid "nav_work"
 msgstr ""
 
 #: templates\base.html:18
-msgid "About / Contact"
-msgstr ""
-
-#: templates\index.html:8
-msgid "Flight Sim World"
+msgid "nav_aboutcontact"
 msgstr ""
 
 #: templates\index.html:9
-msgid "MUD: Multi-User Deathtrap"
-msgstr ""
-
-#: templates\index.html:10
-msgid "Countdown To Extinction"
+msgid "projname_mud"
 msgstr ""
 
 #: templates\index.html:11
-msgid "Obtain Hats For Glory!"
+msgid "projname_hats"
 msgstr ""
 
 #: templates\index.html:12
-msgid "Wetware"
+msgid "projname_wetware"
 msgstr ""
 
 #: templates\index.html:13
-msgid "Stop! Engage Muffin Contraption"
+msgid "projname_muffins"
 msgstr ""
 
 #: templates\index.html:14
-msgid "Minute Games"
+msgid "projname_minutegames"
 msgstr ""
 
 #: templates\index.html:15
-msgid "Tachyon"
+msgid "projname_tachyon"
 msgstr ""
 
 #: templates\index.html:16
-msgid "Steam Transfer Manager"
+msgid "projname_stm"
 msgstr ""
 
 #: templates\index.html:17
@@ -72,14 +100,14 @@ msgid "img"
 msgstr ""
 
 #: templates\index.html:18
-msgid "Dreamtask"
+msgid "projname_dreamtask"
 msgstr ""
 
 #: templates\index.html:19
-msgid "Project Euler"
+msgid "projname_euler"
 msgstr ""
 
 #: templates\index.html:20
-msgid "This Site"
+msgid "projname_meta"
 msgstr ""
 

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-12 17:58+0200\n"
-"PO-Revision-Date: 2017-10-12 17:59+0200\n"
+"POT-Creation-Date: 2017-10-12 20:26+0200\n"
+"PO-Revision-Date: 2017-10-12 20:27+0200\n"
 "Last-Translator: Pete Murdoch <web@pmurdoch.com>\n"
 "Language-Team: Pete Murdoch\n"
 "Language: en_GB\n"
@@ -14,72 +14,154 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: templates\about.html:12
-msgid "Find me elsewhere on the Internet at the links above or <a href=\"mailto:web@pmurdoch.com?subject=Hello\">email me</a>"
+#: templates/pages\flightsimworld.html:3 templates\index.html:8
+msgid "projname_fsw"
+msgstr "Flight Sim World"
+
+#: templates/pages\flightsimworld.html:6
+msgid "devstudio"
+msgstr "Developer"
+
+#: templates/pages\flightsimworld.html:6
+msgid "studioname_dovetailgames"
+msgstr "Dovetail Games"
+
+#: templates/pages\flightsimworld.html:7
+msgid "programmer"
+msgstr "Programmer"
+
+#: templates/pages\flightsimworld.html:7
+msgid "role"
+msgstr "Role"
+
+#: templates/pages\flightsimworld.html:10
+msgid "projectdesc_fsw"
 msgstr ""
+"<p>Based on Microsoft's seminal Flight Simulator technology, Flight Sim "
+"World is a generational leap for flight simulators. The development team "
+"inherited a complicated legacy codebase and worked to convert a 32-bit Win32 "
+"application in to a 64-bit DirectX11 game with PBR rendering, improved "
+"engine performance and portability, and laid the foundation for a codebase "
+"that can be supported for years to come with internal content updates, "
+"third-party partnerships, and community content via Steam "
+"Workshop.</p><p>Flight Sim World is available on <a href=\"http://store.steam"
+"powered.com/app/389280/Flight_Sim_World/\">Steam</a>.</p>"
+
+#: templates\about.html:12
+msgid "aboutme"
+msgstr ""
+"<p>Find me elsewhere on the Internet at the links above or <a "
+"href=\"mailto:web@pmurdoch.com?subject=Hello\">email me</a></p>"
 
 #: templates\base.html:5 templates\base.html:13
-msgid "Pete Murdoch"
-msgstr ""
+msgid "myname"
+msgstr "Pete Murdoch"
 
 #: templates\base.html:17
-msgid "Work"
-msgstr ""
+msgid "nav_work"
+msgstr "Work"
 
 #: templates\base.html:18
-msgid "About / Contact"
-msgstr ""
-
-#: templates\index.html:8
-msgid "Flight Sim World"
-msgstr ""
+msgid "nav_aboutcontact"
+msgstr "About / Contact"
 
 #: templates\index.html:9
-msgid "MUD: Multi-User Deathtrap"
-msgstr ""
+msgid "projname_mud"
+msgstr "MUD: Multi-User Deathtrap"
 
 #: templates\index.html:10
-msgid "Countdown To Extinction"
-msgstr ""
+msgid "projname_extinction"
+msgstr "Countdown to Extinction"
 
 #: templates\index.html:11
-msgid "Obtain Hats For Glory!"
-msgstr ""
+msgid "projname_hats"
+msgstr "Obtain Hats For Glory!"
 
 #: templates\index.html:12
-msgid "Wetware"
-msgstr ""
+msgid "projname_wetware"
+msgstr "Wetware"
 
 #: templates\index.html:13
-msgid "Stop! Engage Muffin Contraption"
-msgstr ""
+msgid "projname_muffins"
+msgstr "Stop! Engage Muffin Contraption!"
 
 #: templates\index.html:14
-msgid "Minute Games"
-msgstr ""
+msgid "projname_minutegames"
+msgstr "Minute Games"
 
 #: templates\index.html:15
-msgid "Tachyon"
-msgstr ""
+msgid "projname_tachyon"
+msgstr "Tachyon"
 
 #: templates\index.html:16
-msgid "Steam Transfer Manager"
-msgstr ""
+msgid "projname_stm"
+msgstr "Steam Transfer Manager"
 
 #: templates\index.html:17
 msgid "img"
-msgstr ""
+msgstr "img"
 
 #: templates\index.html:18
-msgid "Dreamtask"
-msgstr ""
+msgid "projname_dreamtask"
+msgstr "Dreamtask"
 
 #: templates\index.html:19
-msgid "Project Euler"
-msgstr ""
+msgid "projname_euler"
+msgstr "Project Euler"
 
 #: templates\index.html:20
-msgid "This Site"
-msgstr ""
+msgid "projname_meta"
+msgstr "This Site"
+
+#~ msgid "abouttext"
+#~ msgstr ""
+#~ "<p>Find me elsewhere on the Internet at the links above or <a "
+#~ "href=\"mailto:web@pmurdoch.com?subject=Hello\">email me</a></p>"
+
+#~ msgid "work"
+#~ msgstr "Work"
+
+#~ msgid "aboutcontact"
+#~ msgstr "About/Contact"
+
+#~ msgid "projectname_fsw"
+#~ msgstr "Flight Sim World"
+
+#~ msgid "projectname_mud"
+#~ msgstr "MUD: Multi-User Deathtrap"
+
+#~ msgid "projectname_extinction"
+#~ msgstr "Countdown to Extinction"
+
+#~ msgid "projectname_hats"
+#~ msgstr "Obtain Hats For Glory!"
+
+#~ msgid "projectname_wetware"
+#~ msgstr "Wetware"
+
+#~ msgid "projectname_muffins"
+#~ msgstr "Stop! Engage Muffin Contraption!"
+
+#~ msgid "projectname_minutegames"
+#~ msgstr "Minute Games"
+
+#~ msgid "projectname_tachyon"
+#~ msgstr "Tachyon"
+
+#~ msgid "projectname_stm"
+#~ msgstr "Steam Transfer Manager"
+
+#~ msgid "projectname_img"
+#~ msgstr "img"
+
+#~ msgid "projectname_dreamtask"
+#~ msgstr "Dreamtask"
+
+#~ msgid "projectname_euler"
+#~ msgstr "Project Euler"
+
+#~ msgid "projectname_meta"
+#~ msgstr "This Site"

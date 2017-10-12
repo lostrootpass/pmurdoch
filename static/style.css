@@ -115,6 +115,35 @@ h1
 	display: inline;
 }
 
+#project-metadata
+{
+	padding: 10px;
+	padding-left: 0px;
+	margin-bottom: 10px;
+}
+
+.project-metadata-cat
+{
+	font-weight: bold;
+}
+
+#project-body
+{
+
+}
+
+#project-body p
+{
+	margin-bottom: 10px;
+}
+
+#project-title > h4
+{
+	size: 1.5em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
 #games
 {
 	column-count: 3;

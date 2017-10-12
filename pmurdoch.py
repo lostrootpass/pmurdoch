@@ -18,12 +18,8 @@ urls = (
 gettext.translation('messages', 'i18n/', languages=['en_GB'], fallback=True).install(True)
 
 app = web.application(urls, globals())
-webpyglobals = {'namedtuple': namedtuple, '_': _}
-templates = web.template.render("templates", globals=webpyglobals)
-
-def get_page(name):
-	with open(name + '.html', 'r', encoding='utf-8') as f:
-		return f.read()
+webpyglobals = {'namedtuple': namedtuple, '_': _, 'getattr': getattr}
+templates = web.template.render("templates/", globals=webpyglobals)
 	
 def get_error(code):
 	with open('error/' + code + '.html', 'r', encoding='utf-8') as f:
@@ -67,8 +63,7 @@ class page:
 	def GET(self, name):
 		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
 		try:
-			page = templates.page(templates, name, get_page('pages/headers/'+name), get_page('pages/'+name))
-			return templates.base(templates, page)
+			return templates.base(templates, templates.page(templates, name))
 		except:
 			raise web.notfound(templates.base(templates, get_error('404')))
 

@@ -1,8 +1,7 @@
-$def with(templates, name, header, page)
+$def with(templates, name)
 <div id="project-header" class="full-width">
-    $:header
+    $:getattr(templates.pages.headers, name)()
 </div>
-<div id="project">
-    <h4>$name</h4>
+<div id="project-body">
+    $:getattr(templates.pages, name)()
 </div>
-$:page
