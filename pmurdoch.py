@@ -18,24 +18,20 @@ urls = (
 gettext.translation('messages', 'i18n/', languages=['en_GB'], fallback=True).install(True)
 
 app = web.application(urls, globals())
-webpyglobals = {'namedtuple': namedtuple, '_': _, 'getattr': getattr}
+webpyglobals = {'namedtuple': namedtuple, '_': _, 'getattr': getattr, 'hasattr': hasattr}
 templates = web.template.render("templates/", globals=webpyglobals)
 	
 def get_error(code):
 	with open('error/' + code + '.html', 'r', encoding='utf-8') as f:
 		return f.read()
 
-def euler_sort(a, b):
+def euler_sort(a):
 	apos = a.find('.')
-	bpos = b.find('.')
 	av = a
 	if apos != -1:
 		av = a[:apos]
-	bv = b
-	if bpos != -1:
-		bv = b[:bpos]
 
-	return int(av) - int(bv)
+	return int(av)
 
 class about:
 	def GET(self):
@@ -44,10 +40,9 @@ class about:
 
 class euler:
 	def GET(self):
-		dir = listdir('/home/pete/web/code/euler')
-		#dir = listdir("C:\Users\Pete\projects\pmurdoch\code\euler")
-		dir = sorted(dir, euler_sort)
-		return templates.base(templates, templates.euler(templates, dir))
+		eulerdir = listdir('code/euler')
+		eulerdir = sorted(eulerdir, key = lambda x: euler_sort(x))
+		return templates.base(templates, templates.euler(templates, eulerdir))
 
 class code:
 	def GET(self, name):

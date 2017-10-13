@@ -14,10 +14,14 @@ $code:
 	projects["minutegames"] = Project(_('projname_minutegames'), "/minutegames", "mtwi.jpg")
 	projects["tachyon"] = Project(_('projname_tachyon'), "/tachyon", "tachyon.png")
 	projects["stm"] = Project(_('projname_stm'), "/stm", "")
-	projects["img"] = Project(_('img'), "/img", "")
+	projects["img"] = Project(_('projname_img'), "/img", "img.jpg")
 	projects["dreamtask"] = Project(_('projname_dreamtask'), "/dreamtask", "dreamtask.png")
-	projects["euler"] = Project(_('projname_euler'), "/euler", "")
-	projects["yodawg"] = Project(_('projname_meta'), "/meta", "")
+	projects["euler"] = Project(_('projname_euler'), "/euler", "euler.jpg")
+	projects["yodawg"] = Project(_('projname_meta'), "/meta", "meta.png")
+	projects["alphagem"] = Project(_('projname_alphagem'), "/alphagem", "alphagem.png")
+	projects["snipyt"] = Project(_('projname_snipyt'), "/snipyt", "snipyt.png")
+	projects["contactme"] = Project(_('projname_contactme'), "/about", "")
+	projects["shaders"] = Project(_('projname_shaders'), "/shaders", "")
 
 	def getel(mosaicsize, height, name):
 		return templates.element(mosaicsize, height, templates.item(projects[name]))
@@ -31,7 +35,7 @@ $code:
 	</div>
 
 	<div class="horizontal-flow mosaic-cluster full-mosaic">
-		$ elements = [getel("quarter", "200px", "hats"), getel("quarter", "440px", "tachyon")]
+		$ elements = [getel("quarter", "200px", "hats"), getel("quarter", "440px", "tachyon"), getel("quarter", "240px", "img")]
 		$:templates.cluster("vertical", "quarter", elements, "30%")
 		<div class="vertical-flow mosaic-cluster full-mosaic" style="flex-basis: 70%;">
 			$:getel("quarter", "400px", "wetware")
@@ -40,4 +44,17 @@ $code:
 			$:templates.cluster("horizontal", "half", elements)
 		</div>	
 	</div>
+
+	<div class="horizontal-flow mosaic-cluster full-mosaic">
+		$:getel("full", "400px", "alphagem")
+
+		$ elements = [getel("quarter", "200px", "snipyt"), getel("quarter", "200px", "yodawg")]
+		$:templates.cluster("vertical", "half", elements, "25%")
+	</div>
+
+	$ elements = [getel("half", "350px", "shaders"), getel("half", "350px", "stm")]
+	$:templates.cluster("horizontal", "full", elements)
+
+	$ elements = [getel("quarter", "320px", "dreamtask"), getel("quarter", "320px", "euler"), getel("half", "320px", "contactme")]
+	$:templates.cluster("horizontal", "full", elements)
 </div>

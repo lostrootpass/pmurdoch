@@ -1,7 +1,9 @@
 $def with(templates, name)
-<div id="project-header" class="full-width">
-    $:getattr(templates.pages.headers, name)()
-</div>
+$if hasattr(templates.pages.headers, name):
+    <div id="project-header" class="full-width">
+        $:getattr(templates.pages.headers, name)()
+    </div>
+
 <div id="project-body">
     $:getattr(templates.pages, name)()
 </div>

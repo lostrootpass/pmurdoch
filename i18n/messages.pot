@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-10-12 21:07+0200\n"
+"POT-Creation-Date: 2017-10-13 14:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,6 +14,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
+
+#: templates/pages\alphagem.html:3 templates\index.html:21
+msgid "projname_alphagem"
+msgstr ""
+
+#: templates/pages\alphagem.html:6
+msgid "projectdesc_alphagem"
+msgstr ""
+
+#: templates/pages\dreamtask.html:3 templates\index.html:18
+msgid "projname_dreamtask"
+msgstr ""
+
+#: templates/pages\dreamtask.html:6
+msgid "projectdesc_dreamtask"
+msgstr ""
 
 #: templates/pages\extinction.html:3 templates\index.html:10
 msgid "projname_extinction"
@@ -61,6 +77,22 @@ msgstr ""
 msgid "projectdesc_hats"
 msgstr ""
 
+#: templates/pages\img.html:3 templates\index.html:17
+msgid "projname_img"
+msgstr ""
+
+#: templates/pages\img.html:6
+msgid "projectdesc_img"
+msgstr ""
+
+#: templates/pages\meta.html:3 templates\index.html:20
+msgid "projname_meta"
+msgstr ""
+
+#: templates/pages\meta.html:6
+msgid "projectdesc_meta"
+msgstr ""
+
 #: templates/pages\minutegames.html:3 templates\index.html:14
 msgid "projname_minutegames"
 msgstr ""
@@ -83,6 +115,30 @@ msgstr ""
 
 #: templates/pages\muffins.html:6
 msgid "projectdesc_muffins"
+msgstr ""
+
+#: templates/pages\shaders.html:3 templates\index.html:24
+msgid "projname_shaders"
+msgstr ""
+
+#: templates/pages\shaders.html:6
+msgid "projectdesc_shaders"
+msgstr ""
+
+#: templates/pages\snipyt.html:3 templates\index.html:22
+msgid "projname_snipyt"
+msgstr ""
+
+#: templates/pages\snipyt.html:6
+msgid "projectdesc_snipyt"
+msgstr ""
+
+#: templates/pages\stm.html:3 templates\index.html:16
+msgid "projname_stm"
+msgstr ""
+
+#: templates/pages\stm.html:6
+msgid "projectdesc_stm"
 msgstr ""
 
 #: templates/pages\tachyon.html:3 templates\index.html:15
@@ -125,23 +181,23 @@ msgstr ""
 msgid "nav_aboutcontact"
 msgstr ""
 
-#: templates\index.html:16
-msgid "projname_stm"
+#: templates\euler.html:5
+msgid "projectdesc_euler"
 msgstr ""
 
-#: templates\index.html:17
-msgid "img"
+#: templates\euler_item.html:11
+msgid "euler_problem"
 msgstr ""
 
-#: templates\index.html:18
-msgid "projname_dreamtask"
+#: templates\euler_item.html:11
+msgid "euler_solution"
 msgstr ""
 
 #: templates\index.html:19
 msgid "projname_euler"
 msgstr ""
 
-#: templates\index.html:20
-msgid "projname_meta"
+#: templates\index.html:23
+msgid "projname_contactme"
 msgstr ""
 
