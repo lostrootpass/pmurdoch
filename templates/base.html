@@ -1,4 +1,8 @@
-$def with(templates, content)
+$def with(templates, content, ctx)
+$code:
+	def langlink(lang):
+		return ctx.path + "?lang=" + lang
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,8 +28,7 @@ $def with(templates, content)
 		</div>
 		
 		<div id="footer">
-			<p>Email: [first name] [at] [this domain]</p>
-			<p>This site and its owner are fully RFC2324 compliant.</p>
+			<p><a href="$langlink('en')">$_('language_en')</a> | <a href="$langlink('fr')">$_('language_fr')</a> | <a href="$langlink('ja')">$_('language_ja')</a></p>
 		</div>
 	</body>
 </html>

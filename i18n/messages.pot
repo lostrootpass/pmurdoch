@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-10-13 14:34+0200\n"
+"POT-Creation-Date: 2017-10-13 21:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,16 +169,28 @@ msgstr ""
 msgid "aboutme"
 msgstr ""
 
-#: templates\base.html:5 templates\base.html:13
+#: templates\base.html:9 templates\base.html:17
 msgid "myname"
 msgstr ""
 
-#: templates\base.html:17
+#: templates\base.html:21
 msgid "nav_work"
 msgstr ""
 
-#: templates\base.html:18
+#: templates\base.html:22
 msgid "nav_aboutcontact"
+msgstr ""
+
+#: templates\base.html:31
+msgid "language_en"
+msgstr ""
+
+#: templates\base.html:31
+msgid "language_fr"
+msgstr ""
+
+#: templates\base.html:31
+msgid "language_ja"
 msgstr ""
 
 #: templates\euler.html:5

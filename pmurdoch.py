@@ -15,12 +15,35 @@ urls = (
 	'/code/([a-zA-Z0-9\.\-\/_]+)/?', 'code'
 )
 
-gettext.translation('messages', 'i18n/', languages=['en_GB'], fallback=True).install(True)
+languages = {
+	'en': gettext.translation('messages', 'i18n/', languages=['en_GB'], fallback=True),
+	'ja': gettext.translation('messages', 'i18n/', languages=['ja_JP'], fallback=True),
+	'fr': gettext.translation('messages', 'i18n/', languages=['fr_FR'], fallback=True)
+}
+
+languages['en'].install(True)
 
 app = web.application(urls, globals())
-webpyglobals = {'namedtuple': namedtuple, '_': _, 'getattr': getattr, 'hasattr': hasattr}
+
+#Needed to work around the debug reloader trashing the session object
+if web.config.get('_session') is None:
+	session = web.session.Session(app, web.session.DiskStore('sessions'), initializer={'lang': 'en'})
+	web.config._session = session
+else:
+	session = web.config._session
+
+def translate_hook():
+	va = web.input()
+	if 'lang' in va.keys() and va['lang'] in languages:
+		session.lang = va['lang']
+
+def custom_gettext(req):
+	return languages[session.lang].gettext(req)
+
+webpyglobals = {'namedtuple': namedtuple, '_': custom_gettext, 'getattr': getattr, 'hasattr': hasattr}
 templates = web.template.render("templates/", globals=webpyglobals)
-	
+app.add_processor(web.loadhook(translate_hook))
+
 def get_error(code):
 	with open('error/' + code + '.html', 'r', encoding='utf-8') as f:
 		return f.read()
@@ -36,13 +59,13 @@ def euler_sort(a):
 class about:
 	def GET(self):
 		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
-		return templates.base(templates, templates.about(templates))
+		return templates.base(templates, templates.about(templates), web.ctx)
 
 class euler:
 	def GET(self):
 		eulerdir = listdir('code/euler')
 		eulerdir = sorted(eulerdir, key = lambda x: euler_sort(x))
-		return templates.base(templates, templates.euler(templates, eulerdir))
+		return templates.base(templates, templates.euler(templates, eulerdir), web.ctx)
 
 class code:
 	def GET(self, name):
@@ -58,14 +81,14 @@ class page:
 	def GET(self, name):
 		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
 		try:
-			return templates.base(templates, templates.page(templates, name))
+			return templates.base(templates, templates.page(templates, name), web.ctx)
 		except:
 			raise web.notfound(templates.base(templates, get_error('404')))
 
 class index:        
 	def GET(self):
 		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
-		return templates.base(templates, templates.index(templates))
+		return templates.base(templates, templates.index(templates), web.ctx)
 
 if __name__ == "__main__":
 	app.run()
