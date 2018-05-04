@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-10-13 21:04+0200\n"
+"POT-Creation-Date: 2018-05-04 16:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,201 +15,229 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: templates/pages\alphagem.html:3 templates\index.html:21
-msgid "projname_alphagem"
-msgstr ""
-
-#: templates/pages\alphagem.html:6
-msgid "projectdesc_alphagem"
-msgstr ""
-
-#: templates/pages\dreamtask.html:3 templates\index.html:18
-msgid "projname_dreamtask"
-msgstr ""
-
-#: templates/pages\dreamtask.html:6
-msgid "projectdesc_dreamtask"
-msgstr ""
-
-#: templates/pages\extinction.html:3 templates\index.html:10
-msgid "projname_extinction"
-msgstr ""
-
-#: templates/pages\extinction.html:6
-msgid "audio"
-msgstr ""
-
-#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
-#: templates/pages\mud.html:6 templates/pages\wetware.html:7
-msgid "programmer"
-msgstr ""
-
-#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
-#: templates/pages\mud.html:6 templates/pages\wetware.html:7
-msgid "role"
-msgstr ""
-
-#: templates/pages\extinction.html:9
-msgid "projectdesc_extinction"
-msgstr ""
-
-#: templates/pages\flightsimworld.html:3 templates\index.html:8
-msgid "projname_fsw"
-msgstr ""
-
-#: templates/pages\flightsimworld.html:6
-msgid "studioname_dovetailgames"
-msgstr ""
-
-#: templates/pages\flightsimworld.html:6 templates/pages\wetware.html:6
-msgid "devstudio"
-msgstr ""
-
-#: templates/pages\flightsimworld.html:10
-msgid "projectdesc_fsw"
-msgstr ""
-
-#: templates/pages\hats.html:3 templates\index.html:11
-msgid "projname_hats"
-msgstr ""
-
-#: templates/pages\hats.html:6
-msgid "projectdesc_hats"
-msgstr ""
-
-#: templates/pages\img.html:3 templates\index.html:17
-msgid "projname_img"
-msgstr ""
-
-#: templates/pages\img.html:6
-msgid "projectdesc_img"
-msgstr ""
-
-#: templates/pages\meta.html:3 templates\index.html:20
-msgid "projname_meta"
-msgstr ""
-
-#: templates/pages\meta.html:6
-msgid "projectdesc_meta"
-msgstr ""
-
-#: templates/pages\minutegames.html:3 templates\index.html:14
-msgid "projname_minutegames"
-msgstr ""
-
-#: templates/pages\minutegames.html:7
-msgid "projectdesc_minutegames"
-msgstr ""
-
-#: templates/pages\mud.html:3 templates\index.html:9
-msgid "projname_mud"
-msgstr ""
-
-#: templates/pages\mud.html:9
-msgid "projectdesc_mud"
-msgstr ""
-
-#: templates/pages\muffins.html:3 templates\index.html:13
-msgid "projname_muffins"
-msgstr ""
-
-#: templates/pages\muffins.html:6
-msgid "projectdesc_muffins"
-msgstr ""
-
-#: templates/pages\shaders.html:3 templates\index.html:24
-msgid "projname_shaders"
-msgstr ""
-
-#: templates/pages\shaders.html:6
-msgid "projectdesc_shaders"
-msgstr ""
-
-#: templates/pages\snipyt.html:3 templates\index.html:22
-msgid "projname_snipyt"
-msgstr ""
-
-#: templates/pages\snipyt.html:6
-msgid "projectdesc_snipyt"
-msgstr ""
-
-#: templates/pages\stm.html:3 templates\index.html:16
-msgid "projname_stm"
-msgstr ""
-
-#: templates/pages\stm.html:6
-msgid "projectdesc_stm"
-msgstr ""
-
-#: templates/pages\tachyon.html:3 templates\index.html:15
-msgid "projname_tachyon"
-msgstr ""
-
-#: templates/pages\tachyon.html:6
-msgid "projectdesc_tachyon"
-msgstr ""
-
-#: templates/pages\wetware.html:3 templates\index.html:12
-msgid "projname_wetware"
-msgstr ""
-
-#: templates/pages\wetware.html:6
-msgid "studioname_realitycouncil"
-msgstr ""
-
-#: templates/pages\wetware.html:7
-msgid "designer"
-msgstr ""
-
-#: templates/pages\wetware.html:10
-msgid "projectdesc_wetware"
-msgstr ""
-
-#: templates\about.html:12
+#: .\templates\about.html:14
 msgid "aboutme"
 msgstr ""
 
-#: templates\base.html:9 templates\base.html:17
+#: .\templates\base.html:9 .\templates\base.html:16
 msgid "myname"
 msgstr ""
 
-#: templates\base.html:21
+#: .\templates\base.html:20
 msgid "nav_work"
 msgstr ""
 
-#: templates\base.html:22
+#: .\templates\base.html:21
 msgid "nav_aboutcontact"
 msgstr ""
 
-#: templates\base.html:31
+#: .\templates\base.html:31
 msgid "language_en"
 msgstr ""
 
-#: templates\base.html:31
+#: .\templates\base.html:31
 msgid "language_fr"
 msgstr ""
 
-#: templates\base.html:31
+#: .\templates\base.html:31
 msgid "language_ja"
 msgstr ""
 
-#: templates\euler.html:5
+#: .\templates\euler.html:5
 msgid "projectdesc_euler"
 msgstr ""
 
-#: templates\euler_item.html:11
+#: .\templates\euler_item.html:11
 msgid "euler_problem"
 msgstr ""
 
-#: templates\euler_item.html:11
+#: .\templates\euler_item.html:11
 msgid "euler_solution"
 msgstr ""
 
-#: templates\index.html:19
+#: .\templates\index.html:8 .\templates\pages\flightsimworld.html:3
+msgid "projname_fsw"
+msgstr ""
+
+#: .\templates\index.html:9 .\templates\pages\mud.html:3
+msgid "projname_mud"
+msgstr ""
+
+#: .\templates\index.html:10 .\templates\pages\extinction.html:3
+msgid "projname_extinction"
+msgstr ""
+
+#: .\templates\index.html:11 .\templates\pages\hats.html:3
+msgid "projname_hats"
+msgstr ""
+
+#: .\templates\index.html:12 .\templates\pages\wetware.html:3
+msgid "projname_wetware"
+msgstr ""
+
+#: .\templates\index.html:13 .\templates\pages\muffins.html:3
+msgid "projname_muffins"
+msgstr ""
+
+#: .\templates\index.html:14 .\templates\pages\minutegames.html:3
+msgid "projname_minutegames"
+msgstr ""
+
+#: .\templates\index.html:15 .\templates\pages\tachyon.html:3
+msgid "projname_tachyon"
+msgstr ""
+
+#: .\templates\index.html:16 .\templates\pages\stm.html:3
+msgid "projname_stm"
+msgstr ""
+
+#: .\templates\index.html:17 .\templates\pages\img.html:3
+msgid "projname_img"
+msgstr ""
+
+#: .\templates\index.html:18 .\templates\pages\dreamtask.html:3
+msgid "projname_dreamtask"
+msgstr ""
+
+#: .\templates\index.html:19
 msgid "projname_euler"
 msgstr ""
 
-#: templates\index.html:23
+#: .\templates\index.html:20 .\templates\pages\meta.html:3
+msgid "projname_meta"
+msgstr ""
+
+#: .\templates\index.html:21 .\templates\pages\alphagem.html:3
+msgid "projname_alphagem"
+msgstr ""
+
+#: .\templates\index.html:22 .\templates\pages\snipyt.html:3
+msgid "projname_snipyt"
+msgstr ""
+
+#: .\templates\index.html:23
 msgid "projname_contactme"
+msgstr ""
+
+#: .\templates\index.html:24 .\templates\pages\shaders.html:3
+msgid "projname_shaders"
+msgstr ""
+
+#: .\templates\index.html:25 .\templates\pages\doom3.html:3
+msgid "projname_doom3"
+msgstr ""
+
+#: .\templates\index.html:26 .\templates\pages\renderer.html:3
+msgid "projname_renderer"
+msgstr ""
+
+#: .\templates\index.html:27 .\templates\pages\arx.html:3
+msgid "projname_arx"
+msgstr ""
+
+#: .\templates\pages\alphagem.html:6
+msgid "projectdesc_alphagem"
+msgstr ""
+
+#: .\templates\pages\arx.html:6
+msgid "projectdesc_arx"
+msgstr ""
+
+#: .\templates\pages\doom3.html:6
+msgid "projectdesc_doom3"
+msgstr ""
+
+#: .\templates\pages\dreamtask.html:6
+msgid "projectdesc_dreamtask"
+msgstr ""
+
+#: .\templates\pages\extinction.html:6
+msgid "audio"
+msgstr ""
+
+#: .\templates\pages\extinction.html:6 .\templates\pages\flightsimworld.html:7
+#: .\templates\pages\mud.html:6 .\templates\pages\wetware.html:7
+msgid "programmer"
+msgstr ""
+
+#: .\templates\pages\extinction.html:6 .\templates\pages\flightsimworld.html:7
+#: .\templates\pages\mud.html:6 .\templates\pages\wetware.html:7
+msgid "role"
+msgstr ""
+
+#: .\templates\pages\extinction.html:9
+msgid "projectdesc_extinction"
+msgstr ""
+
+#: .\templates\pages\flightsimworld.html:6
+msgid "studioname_dovetailgames"
+msgstr ""
+
+#: .\templates\pages\flightsimworld.html:6 .\templates\pages\wetware.html:6
+msgid "devstudio"
+msgstr ""
+
+#: .\templates\pages\flightsimworld.html:10
+msgid "projectdesc_fsw"
+msgstr ""
+
+#: .\templates\pages\hats.html:6
+msgid "projectdesc_hats"
+msgstr ""
+
+#: .\templates\pages\headers\flightsimworld.html:7
+msgid "fsw_video_url"
+msgstr ""
+
+#: .\templates\pages\img.html:6
+msgid "projectdesc_img"
+msgstr ""
+
+#: .\templates\pages\meta.html:6
+msgid "projectdesc_meta"
+msgstr ""
+
+#: .\templates\pages\minutegames.html:6
+msgid "projectdesc_minutegames"
+msgstr ""
+
+#: .\templates\pages\mud.html:9
+msgid "projectdesc_mud"
+msgstr ""
+
+#: .\templates\pages\muffins.html:6
+msgid "projectdesc_muffins"
+msgstr ""
+
+#: .\templates\pages\renderer.html:6
+msgid "projectdesc_renderer"
+msgstr ""
+
+#: .\templates\pages\shaders.html:6
+msgid "projectdesc_shaders"
+msgstr ""
+
+#: .\templates\pages\snipyt.html:6
+msgid "projectdesc_snipyt"
+msgstr ""
+
+#: .\templates\pages\stm.html:6
+msgid "projectdesc_stm"
+msgstr ""
+
+#: .\templates\pages\tachyon.html:6
+msgid "projectdesc_tachyon"
+msgstr ""
+
+#: .\templates\pages\wetware.html:6
+msgid "studioname_realitycouncil"
+msgstr ""
+
+#: .\templates\pages\wetware.html:7
+msgid "designer"
+msgstr ""
+
+#: .\templates\pages\wetware.html:10
+msgid "projectdesc_wetware"
 msgstr ""
 

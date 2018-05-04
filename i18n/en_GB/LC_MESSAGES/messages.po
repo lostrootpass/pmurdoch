@@ -1,27 +1,175 @@
 # pmurdoch.com translation files
-# Copyright (c) 2017 Pete Murdoch
-# Pete Murdoch <web@pmurdoch.com>, 2017
+# Copyright (c) 2017-2018 Pete Murdoch
+# Pete Murdoch <web@pmurdoch.com>, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-13 21:04+0200\n"
-"PO-Revision-Date: 2017-10-13 21:06+0200\n"
+"POT-Creation-Date: 2018-05-04 16:12+0200\n"
+"PO-Revision-Date: 2018-05-04 16:21+0200\n"
 "Last-Translator: Pete Murdoch <web@pmurdoch.com>\n"
 "Language-Team: Pete Murdoch\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: utf-8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: templates/pages\alphagem.html:3 templates\index.html:21
+#: .\templates\about.html:14
+msgid "aboutme"
+msgstr ""
+"<p>I am a <em>videogame</em> <!-- it's one word and I will fight you --> "
+"developer who focuses on developing with player experience in mind, and able "
+"to bring a technical voice to design discussions. Examples of things I can "
+"help with include engine portability and modernisation, performance, "
+"rendering, and gameplay programming.</p>\n"
+"\n"
+"<p>Over the years I've tried to stay close to the heart of the games "
+"industry, including participating in events as well as attending game jams "
+"as a participant or to mentor new developers, leading me "
+"to earn an honorable mention in the <a "
+"href=\"https://www.mcvuk.com/development/the-sixth-"
+"annual-30-under-30\">Develop 30 Under 30</a>. </p>\n"
+"\n"
+"<p>If this sounds like the sort of person you'd want to work with then find "
+"me using the links above or <a href=\"mailto:cv@p-m.pm\">send an email</a>. "
+"There's also a <a href=\"/🔑\">PGP key</a> (C160FFEB) for you to use if the "
+"details of your project are especially sensitive. Alternatively, if you have "
+"a GamesIndustry.biz recruiter account you can see a full CV <a href=\"http:/"
+"/jobsadmin.gamesindustry.biz/view_user.php?user_id=46261\">here</a>.</p>\n"
+"\n"
+"<p style=\"font-style: italic;\">If you're particularly curious  you can find "
+"the source for this site on <a "
+"href=\"http://github.com/lostrootpass/web\">Github</a>.</p>\n"
+
+#: .\templates\base.html:9 .\templates\base.html:16
+msgid "myname"
+msgstr "Pete Murdoch"
+
+#: .\templates\base.html:20
+msgid "nav_work"
+msgstr "Work"
+
+#: .\templates\base.html:21
+msgid "nav_aboutcontact"
+msgstr "About / Contact"
+
+#: .\templates\base.html:31
+msgid "language_en"
+msgstr "English"
+
+#: .\templates\base.html:31
+msgid "language_fr"
+msgstr "Français"
+
+#: .\templates\base.html:31
+msgid "language_ja"
+msgstr "日本語"
+
+#: .\templates\euler.html:5
+msgid "projectdesc_euler"
+msgstr ""
+"<p><a href=\"http://projecteuler.net\">Project Euler</a> is a series of maths-"
+"based programming challenges designed to push programmers to explore new "
+"techniques and new languages to solve problems. There are a few solutions "
+"listed below, but in keeping with the spirit of Project Euler (to not "
+"publicly disclose answers to allow newcomers to try the problems fresh) only "
+"solutions to early (i.e. relatively simple) problems are listed, and only "
+"na�ve solutions are presented. As different problems call for different "
+"approaches and different toolsets, these solutions are in a mix of languages "
+"including C#, C++, Python and Perl.</p>"
+
+#: .\templates\euler_item.html:11
+msgid "euler_problem"
+msgstr "Problem"
+
+#: .\templates\euler_item.html:11
+msgid "euler_solution"
+msgstr "Solution"
+
+#: .\templates\index.html:8 .\templates\pages\flightsimworld.html:3
+msgid "projname_fsw"
+msgstr "Flight Sim World"
+
+#: .\templates\index.html:9 .\templates\pages\mud.html:3
+msgid "projname_mud"
+msgstr "MUD: Multi-User Deathtrap"
+
+#: .\templates\index.html:10 .\templates\pages\extinction.html:3
+msgid "projname_extinction"
+msgstr "Countdown to Extinction"
+
+#: .\templates\index.html:11 .\templates\pages\hats.html:3
+msgid "projname_hats"
+msgstr "Obtain Hats For Glory!"
+
+#: .\templates\index.html:12 .\templates\pages\wetware.html:3
+msgid "projname_wetware"
+msgstr "Wetware"
+
+#: .\templates\index.html:13 .\templates\pages\muffins.html:3
+msgid "projname_muffins"
+msgstr "Stop! Engage Muffin Contraption!"
+
+#: .\templates\index.html:14 .\templates\pages\minutegames.html:3
+msgid "projname_minutegames"
+msgstr "Minute Games"
+
+#: .\templates\index.html:15 .\templates\pages\tachyon.html:3
+msgid "projname_tachyon"
+msgstr "Tachyon"
+
+#: .\templates\index.html:16 .\templates\pages\stm.html:3
+msgid "projname_stm"
+msgstr "Steam Transfer Manager"
+
+#: .\templates\index.html:17 .\templates\pages\img.html:3
+msgid "projname_img"
+msgstr "img"
+
+#: .\templates\index.html:18 .\templates\pages\dreamtask.html:3
+msgid "projname_dreamtask"
+msgstr "Dreamtask"
+
+#: .\templates\index.html:19
+msgid "projname_euler"
+msgstr "Project Euler"
+
+#: .\templates\index.html:20 .\templates\pages\meta.html:3
+msgid "projname_meta"
+msgstr "This Site"
+
+#: .\templates\index.html:21 .\templates\pages\alphagem.html:3
 msgid "projname_alphagem"
 msgstr "AlphaGem"
 
-#: templates/pages\alphagem.html:6
+#: .\templates\index.html:22 .\templates\pages\snipyt.html:3
+msgid "projname_snipyt"
+msgstr "snipyt"
+
+#: .\templates\index.html:23
+msgid "projname_contactme"
+msgstr "Contact Me"
+
+#: .\templates\index.html:24 .\templates\pages\shaders.html:3
+msgid "projname_shaders"
+msgstr "Shaders"
+
+#: .\templates\index.html:25 .\templates\pages\doom3.html:3
+msgid "projname_doom3"
+msgstr "Doom 3: BFG Edition"
+
+#: .\templates\index.html:26 .\templates\pages\renderer.html:3
+msgid "projname_renderer"
+msgstr "Vulkan Renderer"
+
+#: .\templates\index.html:27 .\templates\pages\arx.html:3
+msgid "projname_arx"
+msgstr "Arx Fatalis"
+
+#: .\templates\pages\alphagem.html:6
 msgid "projectdesc_alphagem"
 msgstr ""
 "<p>AlphaGem is a desktop podcatcher written in C++ and Qt. Most desktop "
@@ -36,11 +184,25 @@ msgstr ""
 "available on <a "
 "href=\"http://github.com/lostrootpass/alphagem\">Github</a>.</p>"
 
-#: templates/pages\dreamtask.html:3 templates\index.html:18
-msgid "projname_dreamtask"
-msgstr "Dreamtask"
+#: .\templates\pages\arx.html:6
+msgid "projectdesc_arx"
+msgstr "<p>Modernised the codebase of Arkane’s classic RPG from a legacy "
+"fixed-function DirectX 7 render pipeline to also support a modern OpenGL "
+"render pipeline, including adding GPU-based animation, per-pixel lighting "
+"and shader-based particle effects. Also updated the game’s custom engine to "
+"support cross-platform alternatives to the existing technology, such as SDL "
+"for input and window management.</p>\n"
+"\n"
+"<p>View the source on <a href=\"https://github.com/lostrootpass/arx\">Github</a>.</p>\n"
 
-#: templates/pages\dreamtask.html:6
+#: .\templates\pages\doom3.html:6
+msgid "projectdesc_doom3"
+msgstr "<p>Updated the open-source release of id Software’s id Tech 4-based FPS "
+"to support Vulkan alongside the existing OpenGL render pipeline without "
+"sacrificing compatibility.</p>\n"
+"<p>View the source on <a href=\"https://github.com/lostrootpass/doom3\">Github</a>.</p>\n"
+
+#: .\templates\pages\dreamtask.html:6
 msgid "projectdesc_dreamtask"
 msgstr ""
 "<p>Dreamtask is a simple desktop TODO application written in Adobe Air. It "
@@ -53,25 +215,21 @@ msgstr ""
 "available on <a "
 "href=\"http://github.com/lostrootpass/dreamtask\">Github</a>.</p>"
 
-#: templates/pages\extinction.html:3 templates\index.html:10
-msgid "projname_extinction"
-msgstr "Countdown to Extinction"
-
-#: templates/pages\extinction.html:6
+#: .\templates\pages\extinction.html:6
 msgid "audio"
 msgstr "Audio work"
 
-#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
-#: templates/pages\mud.html:6 templates/pages\wetware.html:7
+#: .\templates\pages\extinction.html:6 .\templates\pages\flightsimworld.html:7
+#: .\templates\pages\mud.html:6 .\templates\pages\wetware.html:7
 msgid "programmer"
 msgstr "Programmer"
 
-#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
-#: templates/pages\mud.html:6 templates/pages\wetware.html:7
+#: .\templates\pages\extinction.html:6 .\templates\pages\flightsimworld.html:7
+#: .\templates\pages\mud.html:6 .\templates\pages\wetware.html:7
 msgid "role"
 msgstr "Role"
 
-#: templates/pages\extinction.html:9
+#: .\templates\pages\extinction.html:9
 msgid "projectdesc_extinction"
 msgstr ""
 "<p>Countdown to Extinction is a survival game created in 48 hours as part of "
@@ -83,47 +241,39 @@ msgstr ""
 "href=\"http://archive.globalgamejam.org/2011/countdown-extinction/\">GGJ "
 "submission page</a>.</p>"
 
-#: templates/pages\flightsimworld.html:3 templates\index.html:8
-msgid "projname_fsw"
-msgstr "Flight Sim World"
-
-#: templates/pages\flightsimworld.html:6
+#: .\templates\pages\flightsimworld.html:6
 msgid "studioname_dovetailgames"
 msgstr "Dovetail Games"
 
-#: templates/pages\flightsimworld.html:6 templates/pages\wetware.html:6
+#: .\templates\pages\flightsimworld.html:6 .\templates\pages\wetware.html:6
 msgid "devstudio"
 msgstr "Developer"
 
-#: templates/pages\flightsimworld.html:10
+#: .\templates\pages\flightsimworld.html:10
 msgid "projectdesc_fsw"
 msgstr ""
 "<p>Based on Microsoft's seminal Flight Simulator technology, Flight Sim "
 "World is a generational leap for flight simulators. The development team "
 "inherited a complicated legacy codebase and worked to convert a 32-bit Win32 "
-"application in to a 64-bit DirectX11 game with PBR rendering, improved "
+"application in to a 64-bit DirectX11 game with PBR, improved "
 "engine performance and portability, and laid the foundation for a codebase "
 "that can be supported for years to come with internal content updates, "
 "third-party partnerships, and community content via Steam "
 "Workshop.</p><p>Flight Sim World is available on <a href=\"http://store.steam"
 "powered.com/app/389280/Flight_Sim_World/\">Steam</a>.</p>"
 
-#: templates/pages\hats.html:3 templates\index.html:11
-msgid "projname_hats"
-msgstr "Obtain Hats For Glory!"
-
-#: templates/pages\hats.html:6
+#: .\templates\pages\hats.html:6
 msgid "projectdesc_hats"
 msgstr ""
 "<p>Obtain hats, for you have been promised glory if you do.</p>\n"
 "\n"
 "<p>Play on <a href=\"http://tinyurl.com/obtainhats\">Kongregate</a>.</p>"
 
-#: templates/pages\img.html:3 templates\index.html:17
-msgid "projname_img"
-msgstr "img"
+#: .\templates\pages\headers\flightsimworld.html:7
+msgid "fsw_video_url"
+msgstr "https://www.youtube-nocookie.com/embed/gKhqB8jQmXo?rel=0"
 
-#: templates/pages\img.html:6
+#: .\templates\pages\img.html:6
 msgid "projectdesc_img"
 msgstr ""
 "<p>img is a drag-and-drop image uploader created using webpy and jQuery. "
@@ -135,19 +285,11 @@ msgstr ""
 "<p>img has been released under the zlib open source licence and is available "
 "on <a href=\"http://github.com/lostrootpass/img\">Github</a>.</p>"
 
-#: templates/pages\meta.html:3 templates\index.html:20
-msgid "projname_meta"
-msgstr "This Site"
-
-#: templates/pages\meta.html:6
+#: .\templates\pages\meta.html:6
 msgid "projectdesc_meta"
 msgstr ""
 
-#: templates/pages\minutegames.html:3 templates\index.html:14
-msgid "projname_minutegames"
-msgstr "Minute Games"
-
-#: templates/pages\minutegames.html:7
+#: .\templates\pages\minutegames.html:6
 msgid "projectdesc_minutegames"
 msgstr ""
 "<p>Minute Games is a minigame collection that engages players in a variety "
@@ -156,11 +298,7 @@ msgstr ""
 "<p>Due to license expiration, Minute Games is no longer available for "
 "download.</p>"
 
-#: templates/pages\mud.html:3 templates\index.html:9
-msgid "projname_mud"
-msgstr "MUD: Multi-User Deathtrap"
-
-#: templates/pages\mud.html:9
+#: .\templates\pages\mud.html:9
 msgid "projectdesc_mud"
 msgstr ""
 "<p>MUD: Multi-User Deathtrap is a non-euclidian roguelike created in 48 "
@@ -171,31 +309,29 @@ msgstr ""
 "href=\"http://archive.globalgamejam.org/2012/multi-user-deathtrap\">GGJ "
 "submission page</a>.</p>"
 
-#: templates/pages\muffins.html:3 templates\index.html:13
-msgid "projname_muffins"
-msgstr "Stop! Engage Muffin Contraption!"
-
-#: templates/pages\muffins.html:6
+#: .\templates\pages\muffins.html:6
 msgid "projectdesc_muffins"
 msgstr ""
 "<p>A puzzle game about baking muffins, but not baking them too much. Much "
 "like real life.</p>\n"
 "</p>Play on <a "
-"href=\"http://tinyurl.com/muffincontraption\">Kongregate</a>.</p>"
+"href=\"http://tinyurl.com/muffincontraption\">Kongregate</a>.</p>\n"
 
-#: templates/pages\shaders.html:3 templates\index.html:24
-msgid "projname_shaders"
-msgstr "Shaders"
+#: .\templates\pages\renderer.html:6
+msgid "projectdesc_renderer"
+msgstr "<p>Created a C++ Vulkan rendering engine with support for both forward "
+"and deferred rendering, omnidirectional shadow maps with PCF, normal/bump/specular "
+"mapping and normal generation, post-processing effects including SSAO and FXAA, "
+"debugging features (e.g. depth buffer visualisation) and more. "
+"Open-sourced under the zlib license.</p>\n"
+"\n"
+"<p>View the source on <a href=\"https://github.com/lostrootpass/renderer\">Github</a>.</p>\n"
 
-#: templates/pages\shaders.html:6
+#: .\templates\pages\shaders.html:6
 msgid "projectdesc_shaders"
 msgstr ""
 
-#: templates/pages\snipyt.html:3 templates\index.html:22
-msgid "projname_snipyt"
-msgstr "snipyt"
-
-#: templates/pages\snipyt.html:6
+#: .\templates\pages\snipyt.html:6
 msgid "projectdesc_snipyt"
 msgstr ""
 "<p>snipyt is a small, simple web-based tool that allows linking to specific "
@@ -207,11 +343,7 @@ msgstr ""
 "<p>snipyt has been released under the zlib open source license and is "
 "available on <a href=\"http://github.com/lostrootpass/snipyt\">Github</a>.</p>"
 
-#: templates/pages\stm.html:3 templates\index.html:16
-msgid "projname_stm"
-msgstr "Steam Transfer Manager"
-
-#: templates/pages\stm.html:6
+#: .\templates\pages\stm.html:6
 msgid "projectdesc_stm"
 msgstr ""
 "<p>Steam Transfer Manager is a tool to allow users with multiple Steam "
@@ -226,38 +358,25 @@ msgstr ""
 "license and is available on <a "
 "href=\"http://github.com/lostrootpass/steamtransfer\">Github</a>.</p>"
 
-#: templates/pages\tachyon.html:3 templates\index.html:15
-msgid "projname_tachyon"
-msgstr "Tachyon"
-
-#: templates/pages\tachyon.html:6
+#: .\templates\pages\tachyon.html:6
 msgid "projectdesc_tachyon"
-msgstr ""
-"<p>Tachyon was a commercial Twitter client developed for webOS in 2010. "
+msgstr "<p>Tachyon was a commercial Twitter client developed for webOS in 2010. "
 "Acting as a trendsetter in many areas that Twitter didn't yet fully or "
 "officially support (longposts, timeline gaps, multiple account support and "
 "more), Tachyon found success amongst an enthusiastic webOS audience who "
 "needed a fast, powerful client with a clean and professional presentation. "
 "The development of Tachyon led to being awarded a grant from the Prince's "
 "Trust.</p>\n"
-"</p>As the webOS marketplace has now been shutdown and no more webOS devices "
-"are scheduled for release, Tachyon has been relicensed under the zlib open "
-"source license and can be found on <a "
-"href=\"http://github.com/lostrootpass/tachyon\">Github</a>.</p>"
 
-#: templates/pages\wetware.html:3 templates\index.html:12
-msgid "projname_wetware"
-msgstr "Wetware"
-
-#: templates/pages\wetware.html:6
+#: .\templates\pages\wetware.html:6
 msgid "studioname_realitycouncil"
 msgstr "Reality Council"
 
-#: templates/pages\wetware.html:7
+#: .\templates\pages\wetware.html:7
 msgid "designer"
 msgstr "Designer"
 
-#: templates/pages\wetware.html:10
+#: .\templates\pages\wetware.html:10
 msgid "projectdesc_wetware"
 msgstr ""
 "<blockquote><p>\"Agreeably devoid of morals\" - PC Gamer</p></blockquote>\n"
@@ -268,115 +387,3 @@ msgstr ""
 "features a fully-extensible mod system using Lua bindings allowing for all "
 "aspects of the game to be configured and modded by users.</p>\n"
 "<p>Wetware is available for Windows, OS X and Linux.</p>"
-
-#: templates\about.html:12
-msgid "aboutme"
-msgstr ""
-"<p>Find me elsewhere on the Internet at the links above or <a "
-"href=\"mailto:web@pmurdoch.com?subject=Hello\">email me</a></p>"
-
-#: templates\base.html:9 templates\base.html:17
-msgid "myname"
-msgstr "Pete Murdoch"
-
-#: templates\base.html:21
-msgid "nav_work"
-msgstr "Work"
-
-#: templates\base.html:22
-msgid "nav_aboutcontact"
-msgstr "About / Contact"
-
-#: templates\base.html:31
-msgid "language_en"
-msgstr "English"
-
-#: templates\base.html:31
-msgid "language_fr"
-msgstr "Français"
-
-#: templates\base.html:31
-msgid "language_ja"
-msgstr "日本語"
-
-#: templates\euler.html:5
-msgid "projectdesc_euler"
-msgstr ""
-"<p><a href=\"http://projecteuler.net\">Project Euler</a> is a series of maths-"
-"based programming challenges designed to push programmers to explore new "
-"techniques and new languages to solve problems. There are a few solutions "
-"listed below, but in keeping with the spirit of Project Euler (to not "
-"publicly disclose answers to allow newcomers to try the problems fresh) only "
-"solutions to early (i.e. relatively simple) problems are listed, and only "
-"na�ve solutions are presented. As different problems call for different "
-"approaches and different toolsets, these solutions are in a mix of languages "
-"including C#, C++, Python and Perl.</p>"
-
-#: templates\euler_item.html:11
-msgid "euler_problem"
-msgstr "Problem"
-
-#: templates\euler_item.html:11
-msgid "euler_solution"
-msgstr "Solution"
-
-#: templates\index.html:19
-msgid "projname_euler"
-msgstr "Project Euler"
-
-#: templates\index.html:23
-msgid "projname_contactme"
-msgstr "Contact Me"
-
-#~ msgid "img"
-#~ msgstr "img"
-
-#~ msgid "abouttext"
-#~ msgstr ""
-#~ "<p>Find me elsewhere on the Internet at the links above or <a "
-#~ "href=\"mailto:web@pmurdoch.com?subject=Hello\">email me</a></p>"
-
-#~ msgid "work"
-#~ msgstr "Work"
-
-#~ msgid "aboutcontact"
-#~ msgstr "About/Contact"
-
-#~ msgid "projectname_fsw"
-#~ msgstr "Flight Sim World"
-
-#~ msgid "projectname_mud"
-#~ msgstr "MUD: Multi-User Deathtrap"
-
-#~ msgid "projectname_extinction"
-#~ msgstr "Countdown to Extinction"
-
-#~ msgid "projectname_hats"
-#~ msgstr "Obtain Hats For Glory!"
-
-#~ msgid "projectname_wetware"
-#~ msgstr "Wetware"
-
-#~ msgid "projectname_muffins"
-#~ msgstr "Stop! Engage Muffin Contraption!"
-
-#~ msgid "projectname_minutegames"
-#~ msgstr "Minute Games"
-
-#~ msgid "projectname_tachyon"
-#~ msgstr "Tachyon"
-
-#~ msgid "projectname_stm"
-#~ msgstr "Steam Transfer Manager"
-
-#~ msgid "projectname_img"
-#~ msgstr "img"
-
-#~ msgid "projectname_dreamtask"
-#~ msgstr "Dreamtask"
-
-#~ msgid "projectname_euler"
-#~ msgstr "Project Euler"
-
-#~ msgid "projectname_meta"
-#~ msgstr "This Site"

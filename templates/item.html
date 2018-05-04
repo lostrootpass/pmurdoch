@@ -1,6 +1,6 @@
-$def with(project)
+$def with(project, height="100%")
 <a href="$project.link">
-	<div class="item-overview">
+	<div class="item-overview" style="height: $height; -ms-flex-preferred-size: $height;">
 		<div class="item-details item-detail-style">
 			<h4 class="name">$project.name</h4>
 		</div>

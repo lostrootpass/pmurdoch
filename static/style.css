@@ -310,8 +310,20 @@ blockquote
 
 #aboutbody
 {
-	width: 60%;
-	text-align: center;
+	/*width: 60%;
+	text-align: center;*/
+	margin: 10px;
+	padding: 10px;
+}
+
+#aboutbody p
+{
+	margin-bottom: 1.5em;
+}
+
+#aboutbody .about-list
+{
+	font-weight: bold;
 }
 
 #content
@@ -366,13 +378,14 @@ blockquote
 	display: flex;
 	/*flex: 2 2 auto;*/
 	break-inside: avoid;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	/*flex-shrink: 0 !important;*/
 	/*min-width: 400px;*/
 	height: 100%;
 	/*flex-basis: 400px;*/
 	flex-grow: 0;
 	align-items: flex-start;
+	-ms-flex-negative: 0;
 }
 
 .mosaic-element > a
@@ -386,7 +399,7 @@ blockquote
 	width: 100%;
 	height: 100%;
 	border: 1px #1B1B1B solid;
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
 	text-decoration: none;
 	opacity: 1.0;
 	position: relative;
@@ -566,4 +579,84 @@ blockquote
 #footer a:hover
 {
 	color: #ffffff;
+}
+
+#aboutinnercontainer
+{
+	display: flex;
+}
+
+#aboutinnercontainer div
+{
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#aboutinnercontainer #image
+{
+	flex-basis: 33%;
+	flex-grow: 0;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-radius: 10px;
+}
+
+#aboutinnercontainer #aboutbody
+{
+	flex-basis: 67%;
+	flex-shrink: 0;
+	flex-grow: 1;
+}
+
+#aboutinnercontainer div img
+{
+	max-width: 100%;
+	border-radius: 10px;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;  
+	-o-animation-iteration-count: infinite;
+}
+
+#aboutinnercontainer img:hover
+{
+	animation: spinAnim 1.5s linear infinite;
+}
+
+/* tbh I don't know why your mouse cursor is on my face to begin with */
+@keyframes spinAnim
+{
+	0%
+	{
+		transform: rotate(0deg) scale(1.0, 1.0);
+		-ms-transform: rotate(0deg) scale(1.0, 1.0);
+		filter: saturate(1) blur(0px) hue-rotate(0deg);
+		-ms-filter: saturate(1) blur(0px) hue-rotate(0deg);
+	}
+	25%
+	{
+		transform: rotate(90deg) scale(0.7, 0.7);
+		-ms-transform: rotate(90deg) scale(0.7, 0.7);
+		filter: saturate(30) blur(20px);
+		-ms-filter: saturate(30) blur(20px);
+	}
+	50%
+	{
+		transform: rotate(180deg) scale(2.0, 2.0);
+		-ms-transform: rotate(180deg) scale(2.0, 2.0);
+		filter: saturate(100) blur(10px) hue-rotate(180deg);
+		-ms-filter: saturate(100) blur(10px) hue-rotate(180deg);
+	}
+	75%
+	{
+		transform: rotate(270deg) scale(1.3, 1.3);
+		-ms-transform: rotate(270deg) scale(1.3, 1.3);
+		filter: hue-rotate(270deg) saturate(70) blur(10px);
+		-ms-filter: hue-rotate(270deg) saturate(70) blur(10px);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
 }

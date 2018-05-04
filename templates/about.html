@@ -3,12 +3,18 @@ $def with(templates)
 	<div id="ontheweb">
 		<ul>
 			$:templates.ontheweb("linkedin", "http://uk.linkedin.com/in/petemurdoch")
-			$:templates.ontheweb("twitter", "http://twitter.com/lostrootpass")
-			$:templates.ontheweb("flickr", "http://flickr.com/lostrootpass")
+			$:templates.ontheweb("mail", "mailto:cv@p-m.pm")
+			$:templates.ontheweb("vimeo", "http://vimeo.com/pmurdoch")
 			$:templates.ontheweb("github", "http://github.com/lostrootpass")
+			$:templates.ontheweb("gibiz", "http://jobsadmin.gamesindustry.biz/view_user.php?user_id=46261")
 		</ul>
 	</div>
-	<div id="aboutbody">
-		$:_('aboutme')
+	<div id="aboutinnercontainer">
+		<div id="aboutbody">
+			$:_('aboutme')
+		</div>
+		<div id="image">
+			<img src="/static/me.jpg" />
+		</div>
 	</div>		
 </div>
