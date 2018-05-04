@@ -10,7 +10,6 @@ web.config.debug = True
 urls = (
 	'/', 'index',
 	'/about', 'about',
-	'/euler', 'euler',
 	'/([a-zA-Z0-9\-_]+)/?', 'page',
 	'/code/([a-zA-Z0-9\.\-\/_]+)/?', 'code'
 )
@@ -48,24 +47,10 @@ def get_error(code):
 	with open('error/' + code + '.html', 'r', encoding='utf-8') as f:
 		return f.read()
 
-def euler_sort(a):
-	apos = a.find('.')
-	av = a
-	if apos != -1:
-		av = a[:apos]
-
-	return int(av)
-
 class about:
 	def GET(self):
 		web.header('Content-Type','text/html; charset=utf-8', unique=True) 
 		return templates.base(templates, templates.about(templates), web.ctx)
-
-class euler:
-	def GET(self):
-		eulerdir = listdir('code/euler')
-		eulerdir = sorted(eulerdir, key = lambda x: euler_sort(x))
-		return templates.base(templates, templates.euler(templates, eulerdir), web.ctx)
 
 class code:
 	def GET(self, name):
