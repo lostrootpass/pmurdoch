@@ -120,7 +120,7 @@ h1
 	margin-right: -50vw;
 	text-align: center;
 	max-height: 500px;
-	overflow-y: hidden;
+	overflow: hidden;
 	background-color: #353535;
 	height: 500px;
 	display: flex;
@@ -153,7 +153,7 @@ h1
 
 #project-header-img
 {
-	width: 100vw;
+	/*width: 100vw;*/
 	/*margin-top: -25%;*/
 	float: left;
 	position: absolute;
