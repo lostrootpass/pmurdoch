@@ -4,6 +4,7 @@ import web
 from os import listdir
 from collections import namedtuple
 import gettext
+import re
 		
 web.config.debug = True
 
@@ -26,15 +27,29 @@ app = web.application(urls, globals())
 
 #Needed to work around the debug reloader trashing the session object
 if web.config.get('_session') is None:
-	session = web.session.Session(app, web.session.DiskStore('sessions'), initializer={'lang': 'en'})
+	session = web.session.Session(app, web.session.DiskStore('sessions'), initializer={'lang': 'auto'})
 	web.config._session = session
 else:
 	session = web.config._session
+
+def detect_lang():
+	langheader = web.ctx.env.get('HTTP_ACCEPT_LANGUAGE', 'en')
+	langheader = list(filter(None, re.split('[,;]', langheader)))
+
+	#This doesn't account for q-priority but it works well enough
+	for lang in langheader:
+		l = lang[:2].lower()
+		if l in languages:
+			return l
+
+	return 'en'
 
 def translate_hook():
 	va = web.input()
 	if 'lang' in va.keys() and va['lang'] in languages:
 		session.lang = va['lang']
+	elif session.lang == 'auto' or ('lang' in va.keys() and va['lang'] == 'auto'):
+		session.lang = detect_lang()
 
 def custom_gettext(req):
 	return languages[session.lang].gettext(req)
