@@ -33,16 +33,16 @@ $code:
 	$:getel("full", "500px", "renderer")
 
 	$ elements = [getel("half", "350px; flex-basis: 40%;", "arx"), getel("full", "350px; flex-basis: 60%;", "doom3")]
-	$:templates.cluster("horizontal", "full", elements)
+	$:templates.cluster("horizontal", "full", elements, "100%; min-height:350px;")
 
-	<div class="horizontal-flow mosaic-cluster full-mosaic">
-		$:getel("full", "400px", "dfs")
+	<div class="horizontal-flow mosaic-cluster full-mosaic" style="min-height:400px;">
+		$:getel("full", "400px; -ms-flex-preferred-size: 75%", "dfs")
 		
 		$ elements = [getel("quarter", "200px", "mud"), getel("quarter", "200px", "countdown")]
-		$:templates.cluster("vertical", "half", elements)
+		$:templates.cluster("vertical", "quarter", elements)
 	</div>
 
-	<div class="horizontal-flow mosaic-cluster full-mosaic">
+	<div class="horizontal-flow mosaic-cluster full-mosaic" style="min-height:880px;">
 		$ elements = [getel("quarter", "200px", "hats"), getel("quarter", "440px", "tachyon"), getel("quarter", "240px", "img")]
 		$:templates.cluster("vertical", "quarter", elements, "30%")
 		<div class="vertical-flow mosaic-cluster full-mosaic" style="flex-basis: 70%;">
@@ -53,7 +53,7 @@ $code:
 		</div>	
 	</div>
 
-	<div class="horizontal-flow mosaic-cluster full-mosaic">
+	<div class="horizontal-flow mosaic-cluster full-mosaic" style="min-height:650px">
 		$:getel("full", "650px", "alphagem")
 		$#:getel("half", "300px", "stm")
 
