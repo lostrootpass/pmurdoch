@@ -1,12 +1,12 @@
 # pmurdoch.com translation files
 # Copyright (c) 2017 Pete Murdoch
-# Pete Murdoch <web@pmurdoch.com>, 2017
+# Pete Murdoch <web@pmurdoch.com>, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-13 21:04+0200\n"
-"PO-Revision-Date: 2017-10-13 21:08+0200\n"
+"POT-Creation-Date: 2018-05-04 16:12+0200\n"
+"PO-Revision-Date: 2018-05-04 21:28+0200\n"
 "Last-Translator: Pete Murdoch <web@pmurdoch.com>\n"
 "Language-Team: Pete Murdoch\n"
 "Language: ja\n"
@@ -17,30 +17,159 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: templates/pages\alphagem.html:3 templates\index.html:21
-msgid "projname_alphagem"
-msgstr "AlphaGem"
-
-#: templates/pages\alphagem.html:6
-msgid "projectdesc_alphagem"
+#: .\templates\about.html:14
+msgid "aboutme"
 msgstr ""
-"<p>AlphaGem is a desktop podcatcher written in C++ and Qt. Most desktop "
-"podcatchers are web-based and therefore don't support offline playback, or "
-"are general-purpose media players that support podcasts as an afterthought. "
-"AlphaGem is a dedicated podcatcher with a user experience and featureset to "
-"reflect that, including automatic refresh and downloading, download pausing "
-"and resumption, playlists, feed content (e.g. episode descriptions and "
-"transcripts) and more.</p>\n"
-"\n"
-"<p>AlphaGem has been released under the zlib open source licence and is "
-"available on <a "
-"href=\"http://github.com/lostrootpass/alphagem\">Github</a>.</p>"
+"<p>初めまして。ピート・マードック（英：Pete MURDOCH）といいます。私の強みはゲームプログラミングです。"
+"私は経験あるゲーム開発者として、色々なゲーム開発の役割を担当することができ、レンダリング、"
+"ＡＩとゲームプレイプログラミング、エンジンプログラミングなどです。</p>\n"
+"<p>履歴書・職務経歴書などが欲しかったら是非<a href=\"mailto:cv@p-m.pm\">ご連絡ください</a>。</p>\n"
 
-#: templates/pages\dreamtask.html:3 templates\index.html:18
+#: .\templates\base.html:9 .\templates\base.html:16
+msgid "myname"
+msgstr "ピート・マードック"
+
+#: .\templates\base.html:20
+msgid "nav_work"
+msgstr "作品経歴"
+
+#: .\templates\base.html:21
+msgid "nav_aboutcontact"
+msgstr "プロファイル・お問い合わせ"
+
+#: .\templates\base.html:31
+msgid "language_en"
+msgstr "English"
+
+#: .\templates\base.html:31
+msgid "language_fr"
+msgstr "Français"
+
+#: .\templates\base.html:31
+msgid "language_ja"
+msgstr "日本語"
+
+#: .\templates\euler.html:5
+msgid "projectdesc_euler"
+msgstr ""
+"<p><a href=\"http://projecteuler.net\">Project Euler</a> is a series of maths-"
+"based programming challenges designed to push programmers to explore new "
+"techniques and new languages to solve problems. There are a few solutions "
+"listed below, but in keeping with the spirit of Project Euler (to not "
+"publicly disclose answers to allow newcomers to try the problems fresh) only "
+"solutions to early (i.e. relatively simple) problems are listed, and only "
+"na�ve solutions are presented. As different problems call for different "
+"approaches and different toolsets, these solutions are in a mix of languages "
+"including C#, C++, Python and Perl.</p>"
+
+#: .\templates\euler_item.html:11
+msgid "euler_problem"
+msgstr "Problem"
+
+#: .\templates\euler_item.html:11
+msgid "euler_solution"
+msgstr "Solution"
+
+#: .\templates\index.html:8 .\templates\pages\flightsimworld.html:3
+msgid "projname_fsw"
+msgstr "フライトシムワールド"
+
+#: .\templates\index.html:9 .\templates\pages\mud.html:3
+msgid "projname_mud"
+msgstr "MUD: Multi-User Deathtrap"
+
+#: .\templates\index.html:10 .\templates\pages\extinction.html:3
+msgid "projname_extinction"
+msgstr "Countdown to Extinction"
+
+#: .\templates\index.html:11 .\templates\pages\hats.html:3
+msgid "projname_hats"
+msgstr "Obtain Hats For Glory!"
+
+#: .\templates\index.html:12 .\templates\pages\wetware.html:3
+msgid "projname_wetware"
+msgstr "ウェットウェア"
+
+#: .\templates\index.html:13 .\templates\pages\muffins.html:3
+msgid "projname_muffins"
+msgstr "Stop! Engage Muffin Contraption!"
+
+#: .\templates\index.html:14 .\templates\pages\minutegames.html:3
+msgid "projname_minutegames"
+msgstr "1 分間チャレンジ"
+
+#: .\templates\index.html:15 .\templates\pages\tachyon.html:3
+msgid "projname_tachyon"
+msgstr "タキオン"
+
+#: .\templates\index.html:16 .\templates\pages\stm.html:3
+msgid "projname_stm"
+msgstr "Steam Transfer Manager"
+
+#: .\templates\index.html:17 .\templates\pages\img.html:3
+msgid "projname_img"
+msgstr "img"
+
+#: .\templates\index.html:18 .\templates\pages\dreamtask.html:3
 msgid "projname_dreamtask"
 msgstr "Dreamtask"
 
-#: templates/pages\dreamtask.html:6
+#: .\templates\index.html:19
+msgid "projname_euler"
+msgstr "Project Euler"
+
+#: .\templates\index.html:20 .\templates\pages\meta.html:3
+msgid "projname_meta"
+msgstr "This Site"
+
+#: .\templates\index.html:21 .\templates\pages\alphagem.html:3
+msgid "projname_alphagem"
+msgstr "AlphaGem"
+
+#: .\templates\index.html:22 .\templates\pages\snipyt.html:3
+msgid "projname_snipyt"
+msgstr "snipyt"
+
+#: .\templates\index.html:23
+msgid "projname_contactme"
+msgstr "Contact Me"
+
+#: .\templates\index.html:24 .\templates\pages\shaders.html:3
+msgid "projname_shaders"
+msgstr "Shaders"
+
+#: .\templates\index.html:25 .\templates\pages\doom3.html:3
+msgid "projname_doom3"
+msgstr "Doom 3: BFG Edition"
+
+#: .\templates\index.html:26 .\templates\pages\renderer.html:3
+msgid "projname_renderer"
+msgstr "Vulkanレンダーエンジン"
+
+#: .\templates\index.html:27 .\templates\pages\arx.html:3
+msgid "projname_arx"
+msgstr "Arx Fatalis"
+
+#: .\templates\pages\alphagem.html:6
+msgid "projectdesc_alphagem"
+msgstr ""
+"<p>AlphaGemはＣ＋＋で開発したポッドキャストプレイヤーです。機能の中には、自動ダウンロード、字幕、プレイリストなどです。</p>\n"
+"\n"
+"<p>ソースコードは<a "
+"href=\"http://github.com/lostrootpass/alphagem\">こちら</a>。</p>"
+
+#: .\templates\pages\arx.html:6
+msgid "projectdesc_arx"
+msgstr "<p>「Arx Fatalis」のオープンソース版にOpenGLを追加しました。そのうえ、"
+"シェーダーエフェクト、ピクセル単位の光源処理、ＧＰＵを用いたりアニメーションなども追加しました。</p>\n"
+"<p>ソースコードは<a href=\"https://github.com/lostrootpass/arx\">こちら</a>。</p>\n"
+
+#: .\templates\pages\doom3.html:6
+msgid "projectdesc_doom3"
+msgstr "<p>「Doom 3: BFG Edition」のオープンソース版にVulkanを追加しました。</p>\n"
+"<p>ソースコードは<a href=\"https://github.com/lostrootpass/doom3\">こちら</a>。</p>\n"
+
+#: .\templates\pages\dreamtask.html:6
 msgid "projectdesc_dreamtask"
 msgstr ""
 "<p>Dreamtask is a simple desktop TODO application written in Adobe Air. It "
@@ -53,149 +182,111 @@ msgstr ""
 "available on <a "
 "href=\"http://github.com/lostrootpass/dreamtask\">Github</a>.</p>"
 
-#: templates/pages\extinction.html:3 templates\index.html:10
-msgid "projname_extinction"
-msgstr "Countdown to Extinction"
-
-#: templates/pages\extinction.html:6
+#: .\templates\pages\extinction.html:6
 msgid "audio"
-msgstr "Audio work"
+msgstr "オーディオデザイナー"
 
-#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
-#: templates/pages\mud.html:6 templates/pages\wetware.html:7
+#: .\templates\pages\extinction.html:6 .\templates\pages\flightsimworld.html:7
+#: .\templates\pages\mud.html:6 .\templates\pages\wetware.html:7
 msgid "programmer"
-msgstr "Programmer"
+msgstr "プログラマー"
 
-#: templates/pages\extinction.html:6 templates/pages\flightsimworld.html:7
-#: templates/pages\mud.html:6 templates/pages\wetware.html:7
+#: .\templates\pages\extinction.html:6 .\templates\pages\flightsimworld.html:7
+#: .\templates\pages\mud.html:6 .\templates\pages\wetware.html:7
 msgid "role"
-msgstr "Role"
+msgstr "役割"
 
-#: templates/pages\extinction.html:9
+#: .\templates\pages\extinction.html:9
 msgid "projectdesc_extinction"
 msgstr ""
-"<p>Countdown to Extinction is a survival game created in 48 hours as part of "
-"Global Game Jam 2011. It was written in ActionScript3 using Flashpunk.</p>\n"
-"<p>The source code is available under a Creative Commons license via <a "
+"<p>グローバルゲームジャムと４８時間だけでサバイバルゲームの"
+"ゲームシステムをデザイン、オーディオをデザイン、開発しました。ク"
+"ラフティングシステム、ランダムワールドジェネレーションもデザイン、"
+"開発しました。　フォーリーエフェクトの収録もしました</p>\n"
+"<p>ソースコードと詳細を<a "
 "href=\"http://archive.globalgamejam.org/2011/countdown-extinction/\">Global "
-"Game Jam</a>.</p>\n"
-"<p>For full credits and more information see the <a "
-"href=\"http://archive.globalgamejam.org/2011/countdown-extinction/\">GGJ "
-"submission page</a>.</p>"
+"Game Jam</a>で見る。</p>\n"
 
-#: templates/pages\flightsimworld.html:3 templates\index.html:8
-msgid "projname_fsw"
-msgstr "Flight Sim World"
-
-#: templates/pages\flightsimworld.html:6
+#: .\templates\pages\flightsimworld.html:6
 msgid "studioname_dovetailgames"
 msgstr "Dovetail Games"
 
-#: templates/pages\flightsimworld.html:6 templates/pages\wetware.html:6
+#: .\templates\pages\flightsimworld.html:6 .\templates\pages\wetware.html:6
 msgid "devstudio"
-msgstr "Developer"
+msgstr "開発元"
 
-#: templates/pages\flightsimworld.html:10
+#: .\templates\pages\flightsimworld.html:10
 msgid "projectdesc_fsw"
 msgstr ""
-"<p>Based on Microsoft's seminal Flight Simulator technology, Flight Sim "
-"World is a generational leap for flight simulators. The development team "
-"inherited a complicated legacy codebase and worked to convert a 32-bit Win32 "
-"application in to a 64-bit DirectX11 game with PBR rendering, improved "
-"engine performance and portability, and laid the foundation for a codebase "
-"that can be supported for years to come with internal content updates, "
-"third-party partnerships, and community content via Steam "
-"Workshop.</p><p>Flight Sim World is available on <a href=\"http://store.steam"
-"powered.com/app/389280/Flight_Sim_World/\">Steam</a>.</p>"
+"<p>マイクロソフト社のＦＳＸエンジンに基づき、開発チームが、６４bitにアップグレードしたり、"
+"ＤＸ１１を追加したり、ＰＢＲなども追加したりしました。</p>\n"
+"<p>フライトシムワールドのSteamページは <a href=\"http://store.steam"
+"powered.com/app/389280/Flight_Sim_World/\">こちら</a>。</p>"
 
-#: templates/pages\hats.html:3 templates\index.html:11
-msgid "projname_hats"
-msgstr "Obtain Hats For Glory!"
-
-#: templates/pages\hats.html:6
+#: .\templates\pages\hats.html:6
 msgid "projectdesc_hats"
 msgstr ""
-"<p>Obtain hats, for you have been promised glory if you do.</p>\n"
+"<p>コメディープラットフォーマーをデザイン、開発をしました。２ D フィ"
+"ジックス、パズルデザイン、レベルのフローなども⾏っていました。.</p>\n"
 "\n"
-"<p>Play on <a href=\"http://tinyurl.com/obtainhats\">Kongregate</a>.</p>"
+"<p><a href=\"http://tinyurl.com/obtainhats\">Kongregate</a>でプレイする.</p>"
 
-#: templates/pages\img.html:3 templates\index.html:17
-msgid "projname_img"
-msgstr "img"
+#: .\templates\pages\headers\flightsimworld.html:7
+msgid "fsw_video_url"
+msgstr "https://www.youtube-nocookie.com/embed/gKhqB8jQmXo?rel=0"
 
-#: templates/pages\img.html:6
+#: .\templates\pages\img.html:6
 msgid "projectdesc_img"
 msgstr ""
-"<p>img is a drag-and-drop image uploader created using webpy and jQuery. "
-"Features include view/time limits and auto deletion in order to allow for "
-"restricted distribution of images. img can also serve up dynamically scaled "
-"versions of images for embedding into webpages. A live demo can be viewed <a "
-"href=\"http://img.pmurdoch.com\">here</a>.</p>\n"
+"<p>imgは画像アップローダーです。機能の中には、自動削除やリサイズです。</p>\n"
+"<p>ライブデモンストレーションは<a "
+"href=\"http://img.pmurdoch.com\">こちら</a>。</p>\n"
 "\n"
-"<p>img has been released under the zlib open source licence and is available "
-"on <a href=\"http://github.com/lostrootpass/img\">Github</a>.</p>"
+"<p>ソースコードを<a href=\"http://github.com/lostrootpass/img\">Github</a>で見る。</p>"
 
-#: templates/pages\meta.html:3 templates\index.html:20
-msgid "projname_meta"
-msgstr "This Site"
-
-#: templates/pages\meta.html:6
+#: .\templates\pages\meta.html:6
 msgid "projectdesc_meta"
 msgstr ""
 
-#: templates/pages\minutegames.html:3 templates\index.html:14
-msgid "projname_minutegames"
-msgstr "Minute Games"
-
-#: templates/pages\minutegames.html:7
+#: .\templates\pages\minutegames.html:6
 msgid "projectdesc_minutegames"
 msgstr ""
-"<p>Minute Games is a minigame collection that engages players in a variety "
-"of ways including augmented reality and a Rock Band-esque singing "
-"minigame.</p>\n"
-"<p>Due to license expiration, Minute Games is no longer available for "
-"download.</p>"
+"<p>ミニゲームコレクションを開発しました。そのコレクションには、カラオケゲームやＡＲゲームがあります。</p>"
 
-#: templates/pages\mud.html:3 templates\index.html:9
-msgid "projname_mud"
-msgstr "MUD: Multi-User Deathtrap"
-
-#: templates/pages\mud.html:9
+#: .\templates\pages\mud.html:9
 msgid "projectdesc_mud"
 msgstr ""
-"<p>MUD: Multi-User Deathtrap is a non-euclidian roguelike created in 48 "
-"hours for the Global Game Jam 2012. It was written in Lua using LOVE2D.</p>\n"
-"<p>The source code is available under a Creative Commons license on <a "
-"href=\"http://github.com/lostrootpass/sgj12\">Github</a>.</p>\n"
-"<p>For full credits and more information see the <a "
-"href=\"http://archive.globalgamejam.org/2012/multi-user-deathtrap\">GGJ "
-"submission page</a>.</p>"
+"<p>グローバルゲームジャムと４８時間だけで⾮ユークリッドのロー"
+"グライクのゲームシステムをデザイン、開発しました。レベルデザイ"
+"ナー、ライター、CG デザイナー、他のプログラマー等と連携して働き"
+"ました。レベルデザイナーのワークフローのため、使いやすいレベル"
+"デザイン・インターフェースも開発しました</p>\n"
+"ソースコードを<a "
+"href=\"http://github.com/lostrootpass/sgj12\">Github</a>で見る.</p>\n"
+"<p>詳細を<a "
+"href=\"http://archive.globalgamejam.org/2012/multi-user-deathtrap\">GGJ"
+"</a>で見る。</p>"
 
-#: templates/pages\muffins.html:3 templates\index.html:13
-msgid "projname_muffins"
-msgstr "Stop! Engage Muffin Contraption!"
-
-#: templates/pages\muffins.html:6
+#: .\templates\pages\muffins.html:6
 msgid "projectdesc_muffins"
 msgstr ""
-"<p>A puzzle game about baking muffins, but not baking them too much. Much "
-"like real life.</p>\n"
-"</p>Play on <a "
-"href=\"http://tinyurl.com/muffincontraption\">Kongregate</a>.</p>"
+"<p>パズルゲームをデザイン、バランスの調整、開発しました。　サ"
+"ウンドエフェクトの収録、　オンラインランキングシステムの統合も"
+"⾏っていました。</p>\n"
+"</p><a "
+"href=\"http://tinyurl.com/muffincontraption\">Kongregate</a>でプレイする。</p>"
 
-#: templates/pages\shaders.html:3 templates\index.html:24
-msgid "projname_shaders"
-msgstr "Shaders"
+#: .\templates\pages\renderer.html:6
+msgid "projectdesc_renderer"
+msgstr "<p>Ｃ＋＋とＶｕｌｋａｎでレンダリングエンジンを開発しました。機能には、"
+"ＳＳＡＯ、ＦＸＡＡ，遅延シェーディングなどです。</p>\n"
+"<p>ソースコードは<a href=\"https://github.com/lostrootpass/renderer\">こちら</a>。</p>\n"
 
-#: templates/pages\shaders.html:6
+#: .\templates\pages\shaders.html:6
 msgid "projectdesc_shaders"
 msgstr ""
 
-#: templates/pages\snipyt.html:3 templates\index.html:22
-msgid "projname_snipyt"
-msgstr "snipyt"
-
-#: templates/pages\snipyt.html:6
+#: .\templates\pages\snipyt.html:6
 msgid "projectdesc_snipyt"
 msgstr ""
 "<p>snipyt is a small, simple web-based tool that allows linking to specific "
@@ -207,11 +298,7 @@ msgstr ""
 "<p>snipyt has been released under the zlib open source license and is "
 "available on <a href=\"http://github.com/lostrootpass/snipyt\">Github</a>.</p>"
 
-#: templates/pages\stm.html:3 templates\index.html:16
-msgid "projname_stm"
-msgstr "Steam Transfer Manager"
-
-#: templates/pages\stm.html:6
+#: .\templates\pages\stm.html:6
 msgid "projectdesc_stm"
 msgstr ""
 "<p>Steam Transfer Manager is a tool to allow users with multiple Steam "
@@ -226,104 +313,27 @@ msgstr ""
 "license and is available on <a "
 "href=\"http://github.com/lostrootpass/steamtransfer\">Github</a>.</p>"
 
-#: templates/pages\tachyon.html:3 templates\index.html:15
-msgid "projname_tachyon"
-msgstr "Tachyon"
-
-#: templates/pages\tachyon.html:6
+#: .\templates\pages\tachyon.html:6
 msgid "projectdesc_tachyon"
 msgstr ""
-"<p>Tachyon was a commercial Twitter client developed for webOS in 2010. "
-"Acting as a trendsetter in many areas that Twitter didn't yet fully or "
-"officially support (longposts, timeline gaps, multiple account support and "
-"more), Tachyon found success amongst an enthusiastic webOS audience who "
-"needed a fast, powerful client with a clean and professional presentation. "
-"The development of Tachyon led to being awarded a grant from the Prince's "
-"Trust.</p>\n"
-"</p>As the webOS marketplace has now been shutdown and no more webOS devices "
-"are scheduled for release, Tachyon has been relicensed under the zlib open "
-"source license and can be found on <a "
-"href=\"http://github.com/lostrootpass/tachyon\">Github</a>.</p>"
+"<p>タキオンが進出しているプラットフォームのマーケットギャップを解"
+"消するため、ツイーターアプリをデザイン、開発、サポートしました。"
+"クリーンでプロフェッショナルな演出により、タキオンが競合アプリに"
+"差をつけるのに貢献しました。</p>\n"
 
-#: templates/pages\wetware.html:3 templates\index.html:12
-msgid "projname_wetware"
-msgstr "Wetware"
-
-#: templates/pages\wetware.html:6
+#: .\templates\pages\wetware.html:6
 msgid "studioname_realitycouncil"
 msgstr "Reality Council"
 
-#: templates/pages\wetware.html:7
+#: .\templates\pages\wetware.html:7
 msgid "designer"
-msgstr "Designer"
+msgstr "ゲームデザイナー"
 
-#: templates/pages\wetware.html:10
+#: .\templates\pages\wetware.html:10
 msgid "projectdesc_wetware"
 msgstr ""
-"<blockquote><p>\"Agreeably devoid of morals\" - PC Gamer</p></blockquote>\n"
-"<p>Wetware is the flagship strategy game of independent studio Reality "
-"Council. Based on in-house technology, this narrative strategy game is "
-"inspired by the likes of Syndicate, X-COM, and Uplink. It features complex "
-"tiered GOAP AI, written using C++ and uses OpenGL as a render backend. It "
-"features a fully-extensible mod system using Lua bindings allowing for all "
-"aspects of the game to be configured and modded by users.</p>\n"
-"<p>Wetware is available for Windows, OS X and Linux.</p>"
-
-#: templates\about.html:12
-msgid "aboutme"
-msgstr ""
-"<p>Find me elsewhere on the Internet at the links above or <a "
-"href=\"mailto:web@pmurdoch.com?subject=Hello\">email me</a></p>"
-
-#: templates\base.html:9 templates\base.html:17
-msgid "myname"
-msgstr "ピート・マードック"
-
-#: templates\base.html:21
-msgid "nav_work"
-msgstr "Work"
-
-#: templates\base.html:22
-msgid "nav_aboutcontact"
-msgstr "About / Contact"
-
-#: templates\base.html:31
-msgid "language_en"
-msgstr "English"
-
-#: templates\base.html:31
-msgid "language_fr"
-msgstr "Français"
-
-#: templates\base.html:31
-msgid "language_ja"
-msgstr "日本語"
-
-#: templates\euler.html:5
-msgid "projectdesc_euler"
-msgstr ""
-"<p><a href=\"http://projecteuler.net\">Project Euler</a> is a series of maths-"
-"based programming challenges designed to push programmers to explore new "
-"techniques and new languages to solve problems. There are a few solutions "
-"listed below, but in keeping with the spirit of Project Euler (to not "
-"publicly disclose answers to allow newcomers to try the problems fresh) only "
-"solutions to early (i.e. relatively simple) problems are listed, and only "
-"na�ve solutions are presented. As different problems call for different "
-"approaches and different toolsets, these solutions are in a mix of languages "
-"including C#, C++, Python and Perl.</p>"
-
-#: templates\euler_item.html:11
-msgid "euler_problem"
-msgstr "Problem"
-
-#: templates\euler_item.html:11
-msgid "euler_solution"
-msgstr "Solution"
-
-#: templates\index.html:19
-msgid "projname_euler"
-msgstr "Project Euler"
-
-#: templates\index.html:23
-msgid "projname_contactme"
-msgstr "Contact Me"
+"<p>ゲームシステムのデザイン、プログラミングをし、バランスの調整"
+"なども⾏っていました。複雑な予約注⽂のストラテジーゲームの"
+"AI や Mod インターフェースも開発していました。現実的な計画"
+"と予算にのっとり、プロジェクトを円滑に進める任務をやり遂げまし"
+"た。</p>"
