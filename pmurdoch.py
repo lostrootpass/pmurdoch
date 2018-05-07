@@ -83,7 +83,7 @@ class page:
 		try:
 			return templates.base(templates, templates.page(templates, name), web.ctx)
 		except:
-			raise web.notfound(templates.base(templates, get_error('404')))
+			raise web.notfound(templates.base(templates, get_error('404'), web.ctx))
 
 class index:        
 	def GET(self):
